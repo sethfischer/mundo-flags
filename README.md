@@ -53,7 +53,7 @@ Files and directories
 
 * svg/
 
-    Directory containing flag images in SVG format. Filenames follow this 
+    Directory containing flag images in SVG format. File names follow this 
     format: [ISO 3166-1 alpha-2 code (lowercase)].svg For example: nz.svg, 
     gb.svg.
 
@@ -64,12 +64,12 @@ Files and directories
 
 * flags.csv
 
-    List of ISO 3166-1 country codes along with the flag filename, and the 
+    List of ISO 3166-1 country codes along with the flag file name, and the 
     original file source.
 
 * iso3166-1_en.csv
 
-    [Official list of ISO 3166-1 countries][2]. As the publically availabe CSV 
+    [Official list of ISO 3166-1 countries][2]. As the publicly available CSV 
     and XML files are not version controlled please refer to different versions 
     by the date("YYYY-mm-dd") of download from the ISO website.
 
