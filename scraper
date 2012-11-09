@@ -25,22 +25,22 @@ cat /dev/null >| $PLACEHOLDER_FILE
 tail -n +2 $FLAG_DB | while read _LINE
 do
     # split line on delimiter
-    ALPHA2=$(echo $_LINE | cut -d';' -f1)
+    ALPHA_2_CODE=$(echo $_LINE | cut -d';' -f1)
     SUMMARY_PAGE_URL=$(echo $_LINE | cut -d';' -f2)
     
     # create svg basename
-    SVG_BASENAME=$(echo $ALPHA2 | tr '[A-Z]' '[a-z]').svg
+    SVG_BASENAME=$(echo $ALPHA_2_CODE | tr '[A-Z]' '[a-z]').svg
     
     if [ -z "$SUMMARY_PAGE_URL" ]; then
         
-        echo "$ALPHA2" >> $PLACEHOLDER_FILE
+        echo "$ALPHA_2_CODE" >> $PLACEHOLDER_FILE
         
 cat << EOF > ${DOWNLOAD_DIR}${SVG_BASENAME}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect width="960" height="480" style="fill:gray;stroke-width:1;stroke:rgb(0,0,0)"/>
-    <text x="220" y="360" fill="rgb(0,0,0)" font-family="monospace" font-size="430">$ALPHA2</text>
+    <text x="220" y="360" fill="rgb(0,0,0)" font-family="monospace" font-size="430">$ALPHA_2_CODE</text>
 </svg>
 EOF
         
