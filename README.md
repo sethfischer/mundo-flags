@@ -95,9 +95,16 @@ Files and directories
     [Wikimedia Commons Flag project][3]
 
 
+See also
+--------
+
+[https://github.com/sethfischer/mundo-names][6]
+
+
 [1]: http://www.iso.org/
 [2]: http://www.iso.org/iso/country_codes.htm
 [3]: http://commons.wikimedia.org/wiki/Commons:WikiProject_Flags
 [4]: http://openclipart.org/
 [5]: ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/data/
+[6]: https://github.com/sethfischer/mundo-names
 
