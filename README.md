@@ -77,7 +77,7 @@ Files and directories
 
     Licence information.
 
-* makefile
+* Makefile
 
     Example makefile for converting SVG images to raster formats.
 
