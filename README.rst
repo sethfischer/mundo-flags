@@ -46,6 +46,13 @@ collection of sovereign flags for ISO 3166-1 countries that developers
 may easily incorporate into their projects without resorting to the use
 of web scrapers.
 
+License
+-------
+
+Web scraper is licensed under the MIT license.
+
+Flag images are released into the public domain by their respective authors.
+
 Files and directories
 ---------------------
 
