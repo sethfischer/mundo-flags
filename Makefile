@@ -32,4 +32,3 @@ $(OUTPUT_DIR)16x16/%.png	:	$(SRC_DIR)%.svg
 # flags 54 high png
 $(OUTPUT_DIR)x54/%.png	:	$(SRC_DIR)%.svg
 	convert SVG:$^ -resize x54 $@
-

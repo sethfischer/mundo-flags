@@ -27,4 +27,3 @@ diff --side-by-side \
 <(ls -1 $SVG_DIRECTORY | cut -d'.' -f1 | tr '[a-z]' '[A-Z]' | sort)
 
 exit
-
