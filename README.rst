@@ -53,56 +53,8 @@ Web scraper is licensed under the MIT license.
 
 Flag images are released into the public domain by their respective authors.
 
-Files and directories
----------------------
-
--   ``svg/``
-
-    Directory containing flag images in SVG format. File names follow
-    this format: [ISO 3166-1 alpha-2 code (lowercase)].svg For example:
-    nz.svg, gb.svg.
-
--   ``check``
-
-    Script for validating the flag collection against the official list
-    of ISO 3166-1 countries.
-
--   ``flags.csv``
-
-    List of ISO 3166-1 country codes along with the flag file name, and
-    the original file source.
-
--   ``iso3166-1_en.csv``
-
-    `Official list of ISO 3166-1 countries`_. As the publicly available
-    CSV and XML files are not version controlled please refer to
-    different versions by the date(“YYYY-mm-dd”) of download from the ISO
-    website.
-
--   ``LICENCE``
-
-    Licence information.
-
--   ``Makefile``
-
-    Example makefile for converting SVG images to raster formats.
-
--   ``placeholder.txt``
-
-    List of countries for which a placeholder image was generated.
-
--   ``README.md``
-
-    This file.
-
--   ``scraper``
-
-    Web scraper used to download the original set of flags from
-    `Wikimedia Commons Flag project`_
-
 
 .. _International Organization for Standardization (ISO): http://www.iso.org/
 .. _Wikimedia Commons Flag project: http://commons.wikimedia.org/wiki/Commons:WikiProject_Flags
 .. _OpenClipart.org: http://openclipart.org/
 .. _xrmap flags collection: ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/data/
-.. _Official list of ISO 3166-1 countries: http://www.iso.org/iso/country_codes.htm
