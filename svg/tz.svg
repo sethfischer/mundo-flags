@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0,0 144,96">
-	<path d="M 0,0 h 144 L 0,96" fill="#1eb53a"/>
-	<path d="M 0,96 h 144 L 144,0" fill="#00a3dd"/>
-	<line y1="96" x2="144" stroke="#fcd116" stroke-width="38"/>
-	<line y1="96" x2="144" stroke="#000" stroke-width="26"/>
+<svg width="600" height="400" version="1.0" viewBox="0 0 144 96" xmlns="http://www.w3.org/2000/svg">
+  <path d="m0 0h144l-144 96" fill="#1eb53a"/>
+  <path d="m0 96h144v-96" fill="#00a3dd"/>
+  <line x2="144" y1="96" stroke="#fcd116" stroke-width="38"/>
+  <line x2="144" y1="96" stroke="#000" stroke-width="26"/>
 </svg>

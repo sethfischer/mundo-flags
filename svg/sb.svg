@@ -1,22 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="-35 -30 200 100" xmlns:xlink="http://www.w3.org/1999/xlink">
-<clipPath id="rect">
- <rect x="-35" y="-30" width="200" height="100"/>
-</clipPath>
-<rect x="-35" y="-30" width="200" height="100" fill="#215b33"/>
-<path d="M-35,70 v-100 h200" fill="#0051ba"/>
-<path d="M165,-30 -35,70" stroke-width="9" stroke="#fcd116" clip-path="url(#rect)"/>
-<g id="star" fill="white" transform="scale(10)">
- <g id="cone">
-  <polygon id="triangle" points="0,0 0,1 .5,1" transform="translate(0,-1) rotate(18)"/>
-  <use xlink:href="#triangle" transform="scale(-1,1)"/>
- </g>
-  <use xlink:href="#cone" transform="rotate(72)"/>
-  <use xlink:href="#cone" transform="rotate(-72)"/>
-  <use xlink:href="#cone" transform="rotate(144)"/>
-  <use xlink:href="#cone" transform="rotate(-144)"/>
-</g>
-<use xlink:href="#star" transform="rotate(-40.6) translate(26,0) rotate(40.6)"/>
-<use xlink:href="#star" transform="rotate(40.6) translate(26,0) rotate(-40.6)"/>
-<use xlink:href="#star" transform="rotate(-40.6) translate(-26,0) rotate(40.6)"/>
-<use xlink:href="#star" transform="rotate(40.6) translate(-26,0) rotate(-40.6)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="-35 -30 200 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="rect">
+    <rect x="-35" y="-30" width="200" height="100"/>
+  </clipPath>
+  <rect x="-35" y="-30" width="200" height="100" fill="#215b33"/>
+  <path d="m-35 70v-100h200" fill="#0051ba"/>
+  <path d="m165-30-200 100" clip-path="url(#rect)" stroke="#fcd116" stroke-width="9"/>
+  <g id="star" transform="scale(10)" fill="#fff">
+    <g id="cone">
+      <polygon id="triangle" transform="translate(0,-1) rotate(18)" points="0 0 0 1 0.5 1"/>
+      <use transform="scale(-1,1)" xlink:href="#triangle"/>
+    </g>
+    <use transform="rotate(72)" xlink:href="#cone"/>
+    <use transform="rotate(-72)" xlink:href="#cone"/>
+    <use transform="rotate(144)" xlink:href="#cone"/>
+    <use transform="rotate(216)" xlink:href="#cone"/>
+  </g>
+  <use transform="rotate(-40.6) translate(26) rotate(40.6)" xlink:href="#star"/>
+  <use transform="rotate(40.6) translate(26) rotate(-40.6)" xlink:href="#star"/>
+  <use transform="rotate(-40.6) translate(-26) rotate(40.6)" xlink:href="#star"/>
+  <use transform="rotate(40.6) translate(-26) rotate(-40.6)" xlink:href="#star"/>
 </svg>

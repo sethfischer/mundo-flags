@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="800" height="400">
-<rect width="800" height="400" id="blue_stripes" style="fill:#002a8f"/>
-<rect width="800" height="80" y="80" id="white_stripe_1" style="fill:#fff"/>
-<rect width="800" height="80" y="240" id="white_stripe_2" style="fill:#fff"/>
-<path d="M 0,0 0,400 346.406246,200 z" id="triangle" style="fill:#cf142b"/>
-<path d="M 115.46875,140 102,181.46875 l -43.59375,0 35.25,25.625 -13.46875,41.4375 35.28125,-25.625 35.28125,25.625 -13.46875,-41.4375 35.25,-25.625 -43.59375,0 L 115.46875,140 z" id="star" style="fill:#fff"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect id="blue_stripes" width="800" height="400" fill="#002a8f"/>
+  <rect y="80" width="800" height="80" fill="#fff"/>
+  <rect y="240" width="800" height="80" fill="#fff"/>
+  <path id="triangle" d="m0 0v400l346.41-200z" fill="#cf142b"/>
+  <path id="star" d="m115.47 140-13.469 41.469h-43.594l35.25 25.625-13.469 41.438 35.281-25.625 35.281 25.625-13.469-41.438 35.25-25.625h-43.594l-13.469-41.469z" fill="#fff"/>
 </svg>
