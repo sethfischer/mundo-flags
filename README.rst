@@ -38,7 +38,7 @@ such as:
 
 - `Wikimedia Commons Flag project`_
 - `OpenClipart.org`_
-- `xrmap flags collection`_
+- xrmap flags collection ``ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/data/``
 
 The objective of this project is to produce a up-to-date collection of sovereign flags for use by developers.
 
@@ -51,7 +51,6 @@ Web scraper is licensed under the MIT license.
 Flag images are released into the public domain by their respective authors.
 
 
-.. _International Organization for Standardization (ISO): http://www.iso.org/
-.. _Wikimedia Commons Flag project: http://commons.wikimedia.org/wiki/Commons:WikiProject_Flags
-.. _OpenClipart.org: http://openclipart.org/
-.. _xrmap flags collection: ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/data/
+.. _International Organization for Standardization (ISO): https://www.iso.org/
+.. _Wikimedia Commons Flag project: https://commons.wikimedia.org/wiki/Commons:WikiProject_Flags
+.. _OpenClipart.org: https://openclipart.org/
