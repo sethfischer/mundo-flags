@@ -3,7 +3,7 @@
 #
 # Author: Seth Fischer
 #
-# Before running make the approprate output directories must be manually 
+# Before running make the appropriate output directories must be manually 
 # created. e.g. mkdir output output/16x16 output/x54
 #==============================================================================
 
