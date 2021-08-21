@@ -2,6 +2,9 @@
 mundo-flags
 ===========
 
+|lint-status|
+
+
 A collection of flags for countries defined in ISO 3166-1,
 part of the ISO 3166 standard published by the `International Organization for Standardization (ISO)`_.
 
@@ -54,3 +57,8 @@ Flag images are released into the public domain by their respective authors.
 .. _International Organization for Standardization (ISO): https://www.iso.org/
 .. _Wikimedia Commons Flag project: https://commons.wikimedia.org/wiki/Commons:WikiProject_Flags
 .. _OpenClipart.org: https://openclipart.org/
+
+
+.. |lint-status| image:: https://github.com/sethfischer/mundo-flags/actions/workflows/lint.yml/badge.svg
+    :target: https://github.com/sethfischer/mundo-flags/actions/workflows/lint.yml
+    :alt: Lint status
