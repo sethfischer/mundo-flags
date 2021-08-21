@@ -18,3 +18,8 @@ jobs:
         run: |
           sudo apt-get -y install scour
           make lint-svg
+
+      - name: Lint shell scripts
+        run: |
+          sudo apt-get -y install shellcheck
+          make lint-shell
