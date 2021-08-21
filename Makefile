@@ -5,8 +5,8 @@ git-hooks: .git/hooks/pre-commit
 	install --mode=700 $< $@
 
 .PHONY: lint
-lint: lint-shell lint-svg
+lint: lint-python lint-shell lint-svg
 
-.PHONY: lint-shell lint-svg
-lint-shell lint-svg:
+.PHONY: lint-python lint-shell lint-svg
+lint-python lint-shell lint-svg:
 	./$@.sh
