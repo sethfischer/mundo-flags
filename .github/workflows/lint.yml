@@ -24,9 +24,7 @@ jobs:
         run: poetry install --no-interaction
 
       - name: Lint SVG files
-        run: |
-          sudo apt-get -y install scour
-          make lint-svg
+        run: poetry run make lint-svg
 
       - name: Lint shell scripts
         run: |
