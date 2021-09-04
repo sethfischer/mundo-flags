@@ -1,11 +1,8 @@
-#==============================================================================
 # Example makefile for converting svg to raster formats
 #
-# Author: Seth Fischer
-#
-# Before running make the appropriate output directories must be manually 
+# Before running make the appropriate output directories must be manually
 # created. e.g. mkdir output output/16x16 output/x54
-#==============================================================================
+
 
 # source directory
 SRC_DIR := ./svg/
