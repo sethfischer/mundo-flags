@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Creator: CorelDRAW -->
-<svg width="531" height="354" fill-rule="evenodd" version="1.1" viewBox="0 0 1498.6 999.07" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<svg width="531" height="354" fill-rule="evenodd" version="1.1" viewBox="0 0 1498.6 999.07" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <metadata>
     <rdf:RDF>
       <cc:Work rdf:about="">
@@ -11,8 +11,7 @@
     </rdf:RDF>
   </metadata>
   <defs>
-    <style type="text/css">
-    .str0 {stroke:black;stroke-width:0.1}
+    <style type="text/css">.str0 {stroke:black;stroke-width:0.1}
     .fil1 {fill:#28AE66}
     .fil0 {fill:#A90000}
     .fil2 {fill:#CA3745}
@@ -22,8 +21,7 @@
     .fil4 {fill:#383739;fill-rule:nonzero}
     .fil8 {fill:#CA3745;fill-rule:nonzero}
     .fil6 {fill:#FAAE29;fill-rule:nonzero}
-    .fil7 {fill:white;fill-rule:nonzero}
-    </style>
+    .fil7 {fill:white;fill-rule:nonzero}</style>
   </defs>
   <path class="fil0" d="m517.01 916.64c8.2753 0 14.986 6.7107 14.986 14.986v14.984c0 8.2753-6.7107 14.986-14.986 14.986h-14.986v-44.956h14.986zm0 59.942c16.551 0 29.972-13.421 29.972-29.972v-14.984c0-16.551-13.421-29.972-29.972-29.972h-29.972v74.928h29.972zm-59.944-74.928h14.986v74.928h-14.986v-74.928zm-29.972 0h14.986v74.928h-14.986l-29.972-47.042v47.042h-14.986v-74.928h14.986l29.972 47.042v-47.042zm-224.79 1e-3h44.958v14.986h-29.972v14.985h29.972v14.986h-29.972v14.985h29.972v14.986h-44.958v-74.928zm-59.944-2e-3h14.986v59.944h29.972v14.986h-44.958v-74.93zm157.36 59.944h14.982c12.412 0 22.479-10.067 22.479-22.479s-10.253-22.436-22.479-22.479h-14.982v14.986h14.982c4.1371 0 7.493 3.3559 7.493 7.493s-3.3559 7.493-7.493 7.493h-14.982v14.986zm14.982-74.93c28.963 0 52.451 23.488 52.451 52.451s-23.488 52.451-52.451 52.451-52.451-23.488-52.451-52.451 23.488-52.451 52.451-52.451zm0 14.986c20.688 0 37.465 16.777 37.465 37.465s-16.777 37.465-37.465 37.465-37.465-16.777-37.465-37.465 16.777-37.465 37.465-37.465z" fill="#a90000"/>
   <rect class="fil1" y="-4.6667e-5" width="1498.6" height="999.07" fill="#28ae66"/>
