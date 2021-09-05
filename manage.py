@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import logging
 import os.path
 import sys
 from decimal import InvalidOperation as DecimalInvalidOperation
@@ -13,6 +14,8 @@ from manage_flags.downloader import Downloader
 from manage_flags.validator import Validator
 
 FLAG_DIRECTORY = "svg"
+
+logging.basicConfig(format="%(levelname)s:%(message)s")
 
 
 def flagPathname(alpha_2: str, svg: str) -> str:
@@ -30,23 +33,23 @@ def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
         file.write(svg)
         file.close
     except ExpatError as error:
-        message = "Error: {alpha_2} scour ({error_message}) {url}\n".format(
+        message = "{alpha_2} scour ({error_message}) {url}".format(
             alpha_2=alpha_2,
             error_message=expat_errors.messages[error.code],
             url=downloader.url,
         )
-        sys.stderr.write(message)
+        logging.error(message)
         if exit_on_error:
             sys.exit(1)
 
         return False
     except DecimalInvalidOperation as error:
-        message = "Error: {alpha_2} scour ({error}) {url}\n".format(
+        message = "{alpha_2} scour ({error}) {url}".format(
             alpha_2=alpha_2,
             error=error,
             url=downloader.url,
         )
-        sys.stderr.write(message)
+        logging.error(message)
         if exit_on_error:
             sys.exit(1)
 
@@ -64,7 +67,7 @@ def validate_collection():
 
     if validator.validate() is False:
         for error in validator.errors:
-            sys.stderr.write(error.getMessage() + "\n")
+            logging.error(error.getMessage())
 
         sys.exit(1)
 
