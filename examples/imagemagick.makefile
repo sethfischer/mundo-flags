@@ -8,7 +8,7 @@
 
 SRC_DIR := ./flags/iso3166-1/
 BUILD_DIR := ./_build/
-
+IMAGEMAGICK_CONVERT := magick convert
 
 # flag dependencies
 FLAGS_SRC := $(wildcard $(SRC_DIR)*.svg)
@@ -23,11 +23,11 @@ all: $(FLAGS_16x16) $(FLAGS_x54)
 
 # flags 16x16 png padded with transparent background
 $(BUILD_DIR)imagemagick/16x16/%.png: $(SRC_DIR)%.svg
-	convert SVG:$^ -resize 16x16 -background transparent -gravity center -extent 16x16 $@
+	$(IMAGEMAGICK_CONVERT) -font Nimbus-Sans SVG:$^ -resize 16x16 -background transparent -gravity center -extent 16x16 $@
 
 # flags 54 high png
 $(BUILD_DIR)imagemagick/x54/%.png: $(SRC_DIR)%.svg
-	convert SVG:$^ -resize x54 $@
+	$(IMAGEMAGICK_CONVERT) -font Nimbus-Sans SVG:$^ -resize x54 $@
 
 .PHONY: clean
 clean:

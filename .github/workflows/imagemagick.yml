@@ -1,0 +1,31 @@
+name: imagemagick
+
+on:
+  push:
+    branches-ignore:
+      # disable this workflow due to bugs in ImageMagick
+      - "**"
+
+jobs:
+  imagemagick:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: sudo apt-get install ghostscript
+
+      - name: Install ImageMagick magick binary
+        run: |
+          mkdir -p $HOME/bin
+          curl -fsS -o "$HOME/bin/magick" https://download.imagemagick.org/ImageMagick/download/binaries/magick
+          chmod a+x "$HOME/bin/magick"
+          echo "$HOME/bin" >> $GITHUB_PATH
+
+      - name: Magick version
+        run: |
+          magick convert --version
+
+      - name: Convert SVG to PNG using ImageMagick
+        run: make imagemagick

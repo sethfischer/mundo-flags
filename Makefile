@@ -20,9 +20,14 @@ lint-python lint-shell:
 	./$@.sh
 
 .PHONY: convert
-convert: rsvg-convert
+convert: rsvg-convert imagemagick
 
 .PHONY: rsvg-convert
 rsvg-convert:
 	mkdir -p _build/rsvg-convert-x54
 	timeout 120 make -f examples/$@.makefile
+
+.PHONY: imagemagick
+imagemagick:
+	mkdir -p _build/imagemagick/16x16 _build/imagemagick/x54
+	timeout 600 make -f examples/$@.makefile
