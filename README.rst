@@ -2,7 +2,7 @@
 mundo-flags
 ===========
 
-|lint-status|
+|lint-status| |rsvg-convert-status|
 
 
 A collection of flags for countries defined in ISO 3166-1,
@@ -62,3 +62,6 @@ Flag images are released into the public domain by their respective authors.
 .. |lint-status| image:: https://github.com/sethfischer/mundo-flags/actions/workflows/lint.yml/badge.svg
     :target: https://github.com/sethfischer/mundo-flags/actions/workflows/lint.yml
     :alt: Lint status
+.. |rsvg-convert-status| image:: https://github.com/sethfischer/mundo-flags/actions/workflows/rsvg-convert.yml/badge.svg
+    :target: https://github.com/sethfischer/mundo-flags/actions/workflows/rsvg-convert.yml
+    :alt: rsvg-convert status

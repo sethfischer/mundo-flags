@@ -1,0 +1,16 @@
+name: rsvg-convert
+
+on: [push]
+
+jobs:
+  rsvg-convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Convert SVG to PNG using rsvg-convert
+        run: |
+          sudo apt-get -y install librsvg2-bin
+          mkdir -p _build/rsvg-convert-x54
+          make -f examples/rsvg-convert.makefile
