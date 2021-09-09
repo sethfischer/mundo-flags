@@ -13,7 +13,7 @@ import pycountry
 from manage_flags.downloader import Downloader
 from manage_flags.validator import Validator
 
-FLAG_DIRECTORY = "svg"
+FLAG_DIRECTORY = os.path.join("flags", "iso3166-1")
 
 logging.basicConfig(format="%(levelname)s:%(message)s")
 

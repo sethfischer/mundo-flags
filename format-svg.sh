@@ -2,7 +2,7 @@
 
 set -e
 
-for filename in svg/*.svg; do
+for filename in flags/iso3166-1/*.svg; do
     scour -i "$filename" -o "$filename"scoured \
         --disable-simplify-colors \
         --disable-style-to-xml \

@@ -6,7 +6,7 @@
 # mkdir -p _build/imagemagick/16x16 _build/imagemagick/x54
 
 
-SRC_DIR := ./svg/
+SRC_DIR := ./flags/iso3166-1/
 BUILD_DIR := ./_build/
 
 
