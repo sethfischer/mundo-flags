@@ -3,10 +3,7 @@
 import logging
 import os.path
 import sys
-from decimal import InvalidOperation as DecimalInvalidOperation
 from time import sleep
-from xml.parsers.expat import ExpatError
-from xml.parsers.expat import errors as expat_errors
 
 import pycountry
 
@@ -32,26 +29,11 @@ def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
         file = open(pathname, "w")
         file.write(svg)
         file.close
-    except ExpatError as error:
-        message = "{alpha_2} scour ({error_message}) {url}".format(
-            alpha_2=alpha_2,
-            error_message=expat_errors.messages[error.code],
-            url=downloader.url,
-        )
-        logging.error(message)
+    except RuntimeError as error:
+        logging.error(error)
         if exit_on_error:
             sys.exit(1)
-
         return False
-    except DecimalInvalidOperation as error:
-        message = "{alpha_2} scour ({error}) {url}".format(
-            alpha_2=alpha_2,
-            error=error,
-            url=downloader.url,
-        )
-        logging.error(message)
-        if exit_on_error:
-            sys.exit(1)
 
     if not downloader.retrived_requested_title():
         message = "{alpha_2} file titles differ {requested} -> {retrived}".format(

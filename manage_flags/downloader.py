@@ -1,7 +1,10 @@
 import json
 import os.path
 import xml.etree.ElementTree as ET
+from decimal import InvalidOperation as DecimalInvalidOperation
 from urllib.parse import unquote, urlparse
+from xml.parsers.expat import ExpatError
+from xml.parsers.expat import errors as expat_errors
 
 import requests
 from scour.scour import generateDefaultOptions, scourString
@@ -97,4 +100,21 @@ class Downloader:
         options.strip_xml_space_attribute = True  # --strip-xml-space
         options.style_to_xml = False  # --disable-style-to-xml
 
-        return scourString(image, options)
+        try:
+            scoured_image = scourString(image, options)
+        except ExpatError as error:
+            message = "{alpha_2} scour ({error_message}) {url}".format(
+                alpha_2=self.alpha_2,
+                error_message=expat_errors.messages[error.code],
+                url=self.url,
+            )
+            raise RuntimeError(message)
+        except DecimalInvalidOperation as error:
+            message = "{alpha_2} scour ({error}) {url}".format(
+                alpha_2=self.alpha_2,
+                error=error,
+                url=self.url,
+            )
+            raise RuntimeError(message)
+
+        return scoured_image
