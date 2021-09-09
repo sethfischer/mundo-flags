@@ -13,4 +13,4 @@ jobs:
         run: |
           sudo apt-get -y install librsvg2-bin
           mkdir -p _build/rsvg-convert-x54
-          make -f examples/rsvg-convert.makefile
+          timeout 120 make -f examples/rsvg-convert.makefile
