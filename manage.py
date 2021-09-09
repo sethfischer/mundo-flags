@@ -53,6 +53,14 @@ def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
         if exit_on_error:
             sys.exit(1)
 
+    if not downloader.retrived_requested_title():
+        message = "{alpha_2} file titles differ {requested} -> {retrived}".format(
+            alpha_2=downloader.alpha_2,
+            requested=downloader.requested_title,
+            retrived=downloader.retrived_title,
+        )
+        logging.warning(message)
+
     return True
 
 

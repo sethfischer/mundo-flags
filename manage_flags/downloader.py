@@ -1,6 +1,7 @@
 import json
 import os.path
 import xml.etree.ElementTree as ET
+from urllib.parse import unquote, urlparse
 
 import requests
 from scour.scour import generateDefaultOptions, scourString
@@ -13,6 +14,8 @@ class Downloader:
     def __init__(self, alpha_2: str):
         self.alpha_2 = alpha_2
         self.url = None
+        self.requested_title = None
+        self.retrived_title = None
         self.load_db()
 
     def load_db(self) -> int:
@@ -30,12 +33,17 @@ class Downloader:
         if self.alpha_2 not in self.commons_titles:
             raise NotImplementedError
 
+        self.requested_title = self.wikimedia_strip_title_prefix(
+            self.commons_titles[self.alpha_2]
+        )
+
         if not self.commons_titles[self.alpha_2]:
             alpha_2_image = Alpha2Image(self.alpha_2)
             image = alpha_2_image.get()
         else:
             metadata_xml = self.getMetadata(self.commons_titles[self.alpha_2])
             self.url = self.parseFileUrl(metadata_xml)
+            self.retrived_title = self.wikikmedia_title_from_file_url(self.url)
             image = self.getImage(self.url)
 
         image = self.scour(image)
@@ -49,6 +57,24 @@ class Downloader:
         request = requests.get(metadata_url)
 
         return request.text
+
+    def retrived_requested_title(self) -> bool:
+        return (
+            self.wikimedia_strip_title_prefix(self.requested_title)
+            == self.retrived_title
+        )
+
+    @staticmethod
+    def wikikmedia_title_from_file_url(url: str) -> str:
+        a = urlparse(url)
+        return os.path.basename(unquote(a.path))
+
+    @staticmethod
+    def wikimedia_strip_title_prefix(title: str) -> str:
+        prefix = "File:"
+        if title.startswith(prefix):
+            return title[len(prefix) :]  # noqa: E203
+        return title
 
     def parseFileUrl(self, request_text: str) -> str:
         root = ET.fromstring(request_text)
