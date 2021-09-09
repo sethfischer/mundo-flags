@@ -25,4 +25,4 @@ $(BUILD_DIR)rsvg-convert-x54/%.png: $(SRC_DIR)%.svg
 
 .PHONY: clean
 clean:
-	rm -r $(BUILD_DIR)rsvg-convert-x54/*.png
+	$(RM) $(BUILD_DIR)rsvg-convert-x54/*.png

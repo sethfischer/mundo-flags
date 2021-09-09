@@ -31,5 +31,5 @@ $(BUILD_DIR)imagemagick/x54/%.png: $(SRC_DIR)%.svg
 
 .PHONY: clean
 clean:
-	rm -r $(BUILD_DIR)imagemagick/16x16/*.png
-	rm -r $(BUILD_DIR)imagemagick/x54/*.png
+	$(RM) $(BUILD_DIR)imagemagick/16x16/*.png
+	$(RM) $(BUILD_DIR)imagemagick/x54/*.png
