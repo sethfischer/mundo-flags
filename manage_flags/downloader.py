@@ -76,7 +76,7 @@ class Downloader:
     def wikimedia_strip_title_prefix(title: str) -> str:
         prefix = "File:"
         if title.startswith(prefix):
-            return title[len(prefix) :]  # noqa: E203
+            return title[len(prefix) :]
         return title
 
     def parseFileUrl(self, request_text: str) -> str:
