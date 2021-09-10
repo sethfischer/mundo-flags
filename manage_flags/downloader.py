@@ -47,7 +47,7 @@ class Downloader:
         else:
             metadata_xml = self.getMetadata(self.commons_titles[self.alpha_2])
             self.url = self.parseFileUrl(metadata_xml)
-            self.retrived_title = self.wikikmedia_title_from_file_url(self.url)
+            self.retrived_title = self.wikimedia_title_from_file_url(self.url)
             image = self.getImage(self.url)
 
         image = self.scour(image)
@@ -70,7 +70,7 @@ class Downloader:
         )
 
     @staticmethod
-    def wikikmedia_title_from_file_url(url: str) -> str:
+    def wikimedia_title_from_file_url(url: str) -> str:
         a = urlparse(url)
         return os.path.basename(unquote(a.path))
 
