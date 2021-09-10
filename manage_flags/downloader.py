@@ -3,6 +3,7 @@ import os.path
 import xml.etree.ElementTree as ET
 from decimal import InvalidOperation as DecimalInvalidOperation
 from urllib.parse import unquote, urlparse
+from xml.etree.ElementTree import ParseError as ElementTreeParseError
 from xml.parsers.expat import ExpatError
 from xml.parsers.expat import errors as expat_errors
 
@@ -80,7 +81,15 @@ class Downloader:
         return title
 
     def parseFileUrl(self, request_text: str) -> str:
-        root = ET.fromstring(request_text)
+        try:
+            root = ET.fromstring(request_text)
+        except ElementTreeParseError as error:
+            message = "{alpha_2} metadata parse error ({error})".format(
+                alpha_2=self.alpha_2,
+                error=error,
+            )
+            raise RuntimeError(message)
+
         url = root.find(".//file/urls/file[1]").text
 
         return url
