@@ -10,6 +10,7 @@ for filename in flags/iso3166-1/*.svg; do
         --keep-unreferenced-defs \
         --nindent=2 \
         --protect-ids-noninkscape \
+        --enable-comment-stripping \
         --strip-xml-space
     mv -- "$filename"scoured "$filename"
 done

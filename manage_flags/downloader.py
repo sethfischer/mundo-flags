@@ -115,6 +115,7 @@ class Downloader:
         options.keep_defs = True  # --keep-unreferenced-defs
         options.protect_ids_noninkscape = True  # --protect-ids-noninkscape
         options.simple_colors = False  # --disable-simplify-colors
+        options.strip_comments = True  # --enable-comment-stripping
         options.strip_xml_space_attribute = True  # --strip-xml-space
         options.style_to_xml = False  # --disable-style-to-xml
 
