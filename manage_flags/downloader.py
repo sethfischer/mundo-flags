@@ -54,7 +54,8 @@ class Downloader:
 
         return image
 
-    def getMetadata(self, commons_title: str) -> str:
+    @staticmethod
+    def getMetadata(commons_title: str) -> str:
         metadata_host = "https://magnus-toolserver.toolforge.org"
         metadata_url = f"{metadata_host}/commonsapi.php?image={commons_title}"
 
@@ -94,7 +95,8 @@ class Downloader:
 
         return url
 
-    def getImage(self, url: str) -> str:
+    @staticmethod
+    def getImage(url: str) -> str:
         request = requests.get(url)
 
         return request.text

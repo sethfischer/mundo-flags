@@ -46,7 +46,8 @@ class Validator:
 
         return False
 
-    def filename_to_alpha_2(self, path: str) -> str:
+    @staticmethod
+    def filename_to_alpha_2(path: str) -> str:
         base = basename(path)
         root = splitext(base)[0]
         return root.upper()
@@ -59,7 +60,8 @@ class Validator:
 
         return collection
 
-    def iso_countries(self) -> list:
+    @staticmethod
+    def iso_countries() -> list:
         countries = []
         for country in pycountry.countries:
             countries.append(country.alpha_2)
