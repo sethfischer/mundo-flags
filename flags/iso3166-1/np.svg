@@ -3,22 +3,14 @@
 <svg width="726" height="885" version="1.1" viewBox="-17.582 -4.664 71.571 87.246" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Flag of Nepal</title>
   <desc>Coding according to the official construction in "Constitution of the Kingdom of Nepal, Article 5, Shedule 1", adopted in November 1990</desc>
-  <!-- 2*TN= (17955-7335*Sqrt(2))/1468 -->
   <use stroke="#003893" stroke-width="5.1647" xlink:href="#b"/>
-  <!-- F,G,C,A,B,D -->
-  <!-- Fy=Gy = 80-30*Sqrt(2) -->
   <path id="b" d="m-15 37.574h60l-60-37.574v80h60l-60-60z" fill="#DC143C"/>
   <g fill="#fff">
-    <!-- LN = -Px = Qx = 5/4*Sqrt(609-366*Sqrt(2)), Py = Qy= 50-75/4*Sqrt(2) -->
-    <!-- MQ = 5/4*(23-9*Sqrt(2))  -->
     <path d="m-11.95 23.483a12.84 12.84 0 0 0 23.901 0 11.95 11.95 0 0 1-23.901 0"/>
-    <!-- Px, Py, MQ, MQ, Qx, Qy, LN, LN, Px, Py -->
-    <!-- Ty = (183895-69735*Sqrt(2))/2936   TM = (37095-14685*Sqrt(2))/2936 -->
     <g transform="translate(0 29.045) scale(5.5611)">
       <circle r="1"/>
       <g id="jags6">
         <g id="jags3">
-          <!-- sin(Pi/16),-cos(Pi/16), 0, -TS/TM = -Sqrt(884995-8076*Sqrt(2))/673, -sin(Pi/16),-cos(Pi/16) -->
           <path id="jag" transform="rotate(11.25)" d="m0.19509-0.98079-0.19509-0.408-0.19509 0.408"/>
           <use transform="rotate(22.5)" xlink:href="#jag"/>
           <use transform="rotate(45)" xlink:href="#jag"/>
@@ -27,12 +19,10 @@
       </g>
       <use transform="scale(-1 1)" xlink:href="#jags6"/>
     </g>
-    <!--  Wy = 80-15*Sqrt(2)   NM= 15/4*(5-2*Sqrt(2)) -->
     <g transform="translate(0 58.787) scale(8.1434)">
       <circle r="1"/>
       <g id="rays4">
         <g id="rays2">
-          <!-- sin(Pi/12),cos(Pi/12), 0, LN/NM=(79+Sqrt(2))/51, -sin(Pi/12),cos(Pi/12) -->
           <path id="ray" d="m0.25882 0.96593-0.25882 0.61082-0.25882-0.61082"/>
           <use transform="rotate(180)" xlink:href="#ray"/>
         </g>

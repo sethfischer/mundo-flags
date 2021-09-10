@@ -3,7 +3,6 @@
 <svg width="900" height="600" viewBox="-120 -80 240 160" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <path id="spearshape" transform="rotate(30)" d="m-1 55.426h2v-93.426c2-2 2-5 2-8 0-2 0-10-3-18.663-3 8.6632-3 16.663-3 18.663 0 3 0 6 2 8z" stroke-miterlimit="10"/>
-    <!-- 32*sqrt(3), -112/sqrt(3)-->
   </defs>
   <rect x="-120" y="-80" width="240" height="160" fill="#fff"/>
   <rect x="-120" y="-80" width="240" height="48"/>

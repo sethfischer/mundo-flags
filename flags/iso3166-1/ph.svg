@@ -6,14 +6,11 @@
   <rect width="180" height="90" fill="#0038a8"/>
   <rect y="45" width="180" height="45" fill="#ce1126"/>
   <path d="M 77.942286,45 0,90 0,0" fill="#fff"/>
-  <!-- 45*Sqrt(3) -->
   <g transform="translate(28,45)" fill="#fcd116">
     <circle r="9"/>
     <g id="j">
       <g id="i">
         <g id="h">
-          <!-- these coordinates are  -1/(1+tan(k*Pi/48)),1-1/(1+tan(k*Pi/48)) -->
-          <!-- k in {1,2,3}.  2nd scaling factor is 85/0.88366349...  -->
           <path transform="scale(19)" d="m-1 0 0.061512 0.061512 0.93849-0.061512-0.93849-0.061512z"/>
           <path id="g" transform="scale(19.238)" d="m-0.88366 0.11634 0.049574 0.049574 0.83409-0.16591z"/>
           <use transform="scale(1,-1)" xlink:href="#g"/>
@@ -24,10 +21,7 @@
     </g>
     <use transform="rotate(180)" xlink:href="#j"/>
     <g transform="translate(-2.0192)">
-      <!-- 15*Sqrt(3)-28  -->
       <g id="s" transform="translate(37.962)">
-        <!-- 30*Sqrt(3)-14  -->
-        <!-- 5-pointed star with ri=2 and rc=5, not(!) r2/r1 = 0.381966...  -->
         <path id="t" d="m5 0-3.382 1.1756-0.072949 3.5797-2.1631-2.8532-3.4271 1.0368 2.0451-2.9389z"/>
         <use transform="scale(1,-1)" xlink:href="#t"/>
       </g>
