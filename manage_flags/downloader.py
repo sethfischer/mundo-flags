@@ -9,10 +9,10 @@ from xml.parsers.expat import ExpatError
 from xml.parsers.expat import errors as expat_errors
 
 import requests
-from scour.scour import generateDefaultOptions, scourString
 
 from . import DATABASE_DIR
 from .alpha2image import Alpha2Image
+from .scour import Scour
 
 
 class Downloader:
@@ -63,9 +63,7 @@ class Downloader:
 
             image = self.getImage(self.url)
 
-        image = self.scour(image)
-
-        return image
+        return self.cleanXml(image)
 
     @staticmethod
     def getMetadata(commons_title: str) -> str:
@@ -108,19 +106,9 @@ class Downloader:
 
         return request.text
 
-    def scour(self, image: str) -> str:
-        options = generateDefaultOptions()
-        options.indent_depth = 2  # --nindent=2
-        options.indent_type = "space"  # --indent=space
-        options.keep_defs = True  # --keep-unreferenced-defs
-        options.protect_ids_noninkscape = True  # --protect-ids-noninkscape
-        options.simple_colors = False  # --disable-simplify-colors
-        options.strip_comments = True  # --enable-comment-stripping
-        options.strip_xml_space_attribute = True  # --strip-xml-space
-        options.style_to_xml = False  # --disable-style-to-xml
-
+    def cleanXml(self, string: str) -> str:
         try:
-            scoured_image = scourString(image, options)
+            string = Scour().scourString(string)
         except ExpatError as error:
             message = "{alpha_2} scour {error_message} {url}".format(
                 alpha_2=self.alpha_2,
@@ -135,4 +123,4 @@ class Downloader:
             )
             raise RuntimeError(message)
 
-        return scoured_image
+        return string
