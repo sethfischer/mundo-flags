@@ -16,13 +16,9 @@ from .scour import Scour
 
 
 class Downloader:
-    def __init__(self, alpha_2: str, quiet: bool = True):
+    def __init__(self, alpha_2: str):
         self.alpha_2 = alpha_2
         self.url = None
-
-        self.logging = logging.basicConfig(format="%(levelname)s:%(message)s")
-        if not quiet:
-            self.logger.propagate = False
 
         self.load_db()
 
