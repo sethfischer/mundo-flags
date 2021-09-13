@@ -1,4 +1,3 @@
-import json
 import logging
 import os.path
 import xml.etree.ElementTree as ET
@@ -10,40 +9,26 @@ from xml.parsers.expat import errors as expat_errors
 
 import requests
 
-from . import DATABASE_DIR
+from manage_flags.flagdata import FlagData
+
 from .alpha2image import Alpha2Image
 from .scour import Scour
 
 
 class Downloader:
-    def __init__(self, alpha_2: str):
-        self.alpha_2 = alpha_2
+    def __init__(self, flag_data: FlagData):
+        self.alpha_2 = flag_data.alpha_2
+        self.flag_data = flag_data
         self.url = None
 
-        self.load_db()
-
-    def load_db(self) -> int:
-        db = open(os.path.join(DATABASE_DIR, "iso3166-1.json"))
-        commons_titles = json.load(db)
-
-        self.commons_titles = {}
-
-        for country in commons_titles["3166-1"]:
-            self.commons_titles[country["alpha_2"]] = country["commons_title"]
-
-        return len(self.commons_titles)
-
     def get(self) -> str:
-        if self.alpha_2 not in self.commons_titles:
-            raise NotImplementedError
+        requested_title = self.strip_title_prefix(self.flag_data.commons_title)
 
-        requested_title = self.strip_title_prefix(self.commons_titles[self.alpha_2])
-
-        if not self.commons_titles[self.alpha_2]:
+        if not self.flag_data.commons_title:
             alpha_2_image = Alpha2Image(self.alpha_2)
             image = alpha_2_image.get()
         else:
-            metadata_xml = self.getMetadata(self.commons_titles[self.alpha_2])
+            metadata_xml = self.getMetadata(self.flag_data.commons_title)
             self.url = self.parseFileUrl(metadata_xml)
             retrived_title = self.wikimedia_title_from_file_url(self.url)
 

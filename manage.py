@@ -7,6 +7,7 @@ from time import sleep
 
 import pycountry
 
+from manage_flags.database import iso3166_1
 from manage_flags.downloader import Downloader
 from manage_flags.validator import Validator
 
@@ -20,7 +21,12 @@ def flagPathname(alpha_2: str, svg: str) -> str:
 
 
 def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
-    downloader = Downloader(alpha_2)
+
+    if alpha_2 not in iso3166_1:
+        logging.critical("Invalid alpha 2 code: {alpha_2}".format(alpha_2=alpha_2))
+        sys.exit(1)
+
+    downloader = Downloader(iso3166_1[alpha_2])
 
     try:
         svg = downloader.get()
