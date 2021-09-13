@@ -12,5 +12,4 @@ jobs:
       - name: Convert SVG to PNG using rsvg-convert
         run: |
           sudo apt-get -y install librsvg2-bin
-          mkdir -p _build/rsvg-convert-x54
-          timeout 120 make -f examples/rsvg-convert.makefile
+          make rsvg-convert

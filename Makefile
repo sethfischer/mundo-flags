@@ -10,3 +10,11 @@ lint: lint-python lint-shell lint-svg
 .PHONY: lint-python lint-shell lint-svg
 lint-python lint-shell lint-svg:
 	./$@.sh
+
+.PHONY: convert
+convert: rsvg-convert
+
+.PHONY: rsvg-convert
+rsvg-convert:
+	mkdir -p _build/rsvg-convert-x54
+	timeout 120 make -f examples/$@.makefile
