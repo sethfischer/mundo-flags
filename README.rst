@@ -27,27 +27,15 @@ Contributing
 
 If you identify an error please submit a new issue or open a pull request.
 
-Many of the flags in this collection were obtained either from the `Wikimedia Commons Flag project`_ or `OpenClipart.org`_.
-If you are creating or modifying artwork please consider submitting to these collections in the first instance,
+The flags in this collection were obtained from the `Wikimedia Commons Flag project`_.
+If you are creating or modifying artwork please consider submitting to this collection in the first instance,
 before submitting an issue to have it incorporated in this collection.
-
-
-Why this project?
------------------
-
-There are a number of other public domain flag collections available,
-many of them more extensive than this collection,
-such as:
-
-- `Wikimedia Commons Flag project`_
-- `OpenClipart.org`_
-- xrmap flags collection ``ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/data/``
-
-The objective of this project is to produce a up-to-date collection of sovereign flags for use by developers.
 
 
 License
 -------
+
+|license-mit| |license-cc0|
 
 Web scraper is licensed under the MIT license.
 
@@ -56,7 +44,6 @@ Flag images are released into the public domain by their respective authors.
 
 .. _International Organization for Standardization (ISO): https://www.iso.org/
 .. _Wikimedia Commons Flag project: https://commons.wikimedia.org/wiki/Commons:WikiProject_Flags
-.. _OpenClipart.org: https://openclipart.org/
 
 
 .. |lint-status| image:: https://github.com/sethfischer/mundo-flags/actions/workflows/lint.yml/badge.svg
@@ -68,3 +55,9 @@ Flag images are released into the public domain by their respective authors.
 .. |rsvg-convert-status| image:: https://github.com/sethfischer/mundo-flags/actions/workflows/rsvg-convert.yml/badge.svg
     :target: https://github.com/sethfischer/mundo-flags/actions/workflows/rsvg-convert.yml
     :alt: rsvg-convert status
+.. |license-mit| image:: https://img.shields.io/badge/license-MIT-green
+    :target: https://opensource.org/licenses/MIT
+    :alt: MIT License
+.. |license-cc0| image:: https://img.shields.io/badge/License-CC0%201.0-green
+    :target: https://creativecommons.org/publicdomain/zero/1.0/
+    :alt: CC0-1.0 License
