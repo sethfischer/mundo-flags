@@ -39,7 +39,7 @@ License
 
 Web scraper is licensed under the MIT license.
 
-Flag images are released into the public domain by their respective authors.
+Flag images are dedicated to the public domain (CC0 1.0) by their respective authors.
 
 
 .. _International Organization for Standardization (ISO): https://www.iso.org/
