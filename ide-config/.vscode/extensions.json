@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "foxundermoon.shell-format",
+        "timonwong.shellcheck",
+        "editorconfig.editorconfig",
+        "ms-python.python",
+        "richie5um2.vscode-sort-json",
+        "redhat.vscode-yaml",
+        "viktorzetterstrom.non-breaking-space-highlighter"
+    ]
+}

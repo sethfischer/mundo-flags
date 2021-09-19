@@ -4,6 +4,10 @@ git-hooks: .git/hooks/pre-commit
 .git/hooks/%: git-hooks/%.sh
 	install --mode=700 $< $@
 
+.PHONY: install-ide-config
+install-ide-config:
+	rsync --recursive ide-config/ .
+
 .PHONY: lint
 lint: lint-python lint-shell lint-svg
 

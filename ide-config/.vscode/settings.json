@@ -1,0 +1,25 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.rulers": [
+            88
+        ]
+    },
+    "cSpell.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        80
+    ],
+    "files.associations": {
+        "*.makefile": "makefile"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "python.formatting.provider": "black",
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    "restructuredtext.confPath": "",
+    "restructuredtext.languageServer.disabled": true
+}

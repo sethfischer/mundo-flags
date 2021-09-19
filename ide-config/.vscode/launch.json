@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "invoke build --tag=2012.11.9",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/invoke",
+            "args": [
+                "build",
+                "--tag",
+                "2012.11.9"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "manage.py download --country NZ",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "download",
+                "--country",
+                "NZ"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
