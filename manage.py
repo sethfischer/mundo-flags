@@ -25,7 +25,7 @@ def flagPathname(alpha_2: str, svg: str) -> str:
 def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
     """Download a flag image from Wikimedia Commons."""
     if alpha_2 not in iso3166_1:
-        logging.critical("Invalid alpha 2 code: {alpha_2}".format(alpha_2=alpha_2))
+        logging.critical("Invalid alpha-2 code: {alpha_2}".format(alpha_2=alpha_2))
         sys.exit(1)
 
     downloader = Downloader(iso3166_1[alpha_2])
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     group.add_argument(
         "--country",
         dest="alpha_2",
-        help="Download flag by ISO 31661-1 alpha 2 country code",
+        help="Download flag by ISO 31661-1 alpha-2 country code",
     )
     group.add_argument(
         "--all-countries",
