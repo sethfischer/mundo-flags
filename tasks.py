@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+"""Invoke tasks for mundo-flags flag collection."""
 
 import os.path
 import tempfile
@@ -28,7 +29,7 @@ https://creativecommons.org/publicdomain/zero/1.0/
 
 @task(help={"tag": "Git tag"})
 def build(c, tag="0.0.0"):
-    """Build release archive"""
+    """Build release archive."""
     release_name = "mundo-flags_{tag}".format(tag=tag)
     release_directory = os.path.join(BUILD_ROOT_DIRECTORY, release_name)
     with tempfile.TemporaryDirectory() as tmp_directory:

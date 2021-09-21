@@ -1,3 +1,5 @@
+"""Validate a flag collection."""
+
 from os import listdir
 from os.path import basename, isfile, join, splitext
 
@@ -7,13 +9,17 @@ from .validator_error import ValidatorError
 
 
 class Validator:
+    """Validate a flag collection."""
+
     def __init__(self, flag_directory: str):
+        """Initialise flag collection validator."""
         self.flag_directory = flag_directory
         self.additional_flags = set()
         self.missing_flags = set()
         self.errors = []
 
     def validate(self) -> bool:
+        """Validate a flag collection."""
         collection = self.svg_collection()
         iso_countries = self.iso_countries()
 
@@ -41,6 +47,7 @@ class Validator:
         return True
 
     def hasErrors(self) -> bool:
+        """Test if collection has validation errors."""
         if len(self.errors) > 0:
             return True
 
@@ -48,11 +55,13 @@ class Validator:
 
     @staticmethod
     def filename_to_alpha_2(path: str) -> str:
+        """Parse ISO alpha-2 country code from flag pathname."""
         base = basename(path)
         root = splitext(base)[0]
         return root.upper()
 
     def svg_collection(self) -> list:
+        """Get list of flags in collection."""
         collection = []
         for f in listdir(self.flag_directory):
             if isfile(join(self.flag_directory, f)):
@@ -62,6 +71,7 @@ class Validator:
 
     @staticmethod
     def iso_countries() -> list:
+        """Get list of countries."""
         countries = []
         for country in pycountry.countries:
             countries.append(country.alpha_2)

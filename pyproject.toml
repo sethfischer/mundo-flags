@@ -19,11 +19,16 @@ isort = "^5.9.3"
 rstcheck = "^3.3.1"
 commitizen = "^2.18.1"
 invoke = "^1.6.0"
+pydocstyle = "^6.1.1"
+toml = "^0.10.2"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
 version = "0.1.0"
 tag_format = "$version"
+
+[tool.pydocstyle]
+convention = "pep257"
 
 [tool.isort]
 profile = "black"

@@ -1,12 +1,23 @@
+"""Wrappers around scour.
+
+`Scour`_ is an SVG optimizer/cleaner.
+
+.. _Scour: https://github.com/scour-project/scour
+"""
+
 from scour.scour import generateDefaultOptions, scourString
 
 
 class Scour:
+    """Wrapper around scour."""
+
     def __init__(self):
+        """Initialise with default options."""
         self.options = self.defaultOptions()
 
     @staticmethod
     def defaultOptions():
+        """Create default options."""
         options = generateDefaultOptions()
 
         options.indent_depth = 2  # --nindent=2
@@ -21,4 +32,5 @@ class Scour:
         return options
 
     def scourString(self, string: str) -> str:
+        """Scour an XML string."""
         return scourString(string, self.options)

@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+"""Manage flags CLI tool."""
 
 import logging
 import os.path
@@ -17,11 +18,12 @@ logging.basicConfig(format="%(levelname)s:%(message)s")
 
 
 def flagPathname(alpha_2: str, svg: str) -> str:
+    """Generate pathname for flag image."""
     return os.path.join(FLAG_DIRECTORY, alpha_2.lower() + ".svg")
 
 
 def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
-
+    """Download a flag image from Wikimedia Commons."""
     if alpha_2 not in iso3166_1:
         logging.critical("Invalid alpha 2 code: {alpha_2}".format(alpha_2=alpha_2))
         sys.exit(1)
@@ -45,12 +47,14 @@ def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
 
 
 def downlad_iso_3166_1_flags(delay: int):
+    """Batch download flag images from Wikimedia Commons."""
     for country in pycountry.countries:
         downlad_iso_3166_1_flag(country.alpha_2, exit_on_error=False)
         sleep(delay)
 
 
 def validate_collection():
+    """Validate flag collection."""
     validator = Validator(FLAG_DIRECTORY)
 
     if validator.validate() is False:
@@ -63,6 +67,7 @@ def validate_collection():
 
 
 def main(args):
+    """Manage flags CLI tool."""
     if args.cmd == "download":
         if args.alpha_2 is not None:
             downlad_iso_3166_1_flag(args.alpha_2)

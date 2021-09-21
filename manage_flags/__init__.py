@@ -1,3 +1,5 @@
+"""Manage flag collections."""
+
 import pkg_resources
 
 resource_filename = pkg_resources.resource_filename
