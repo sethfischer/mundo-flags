@@ -42,9 +42,9 @@ class Downloader:
             alpha_2_image = Alpha2Image(self.alpha_2)
             image = alpha_2_image.get()
         else:
-            metadata_xml = self.getMetadata(self.flag_data.commons_title)
-            self.url = self.parseFileUrl(metadata_xml)
-            retrived_title = self.wikimedia_title_from_file_url(self.url)
+            metadata_xml = self.get_metadata(self.flag_data.commons_title)
+            self.url = self.parse_file_url(metadata_xml)
+            retrived_title = self.wikimedia_title_from_url(self.url)
 
             if self.strip_title_prefix(requested_title) != retrived_title:
                 message = (
@@ -56,12 +56,12 @@ class Downloader:
                 )
                 logging.warning(message)
 
-            image = self.getImage(self.url)
+            image = self.get_image(self.url)
 
-        return self.cleanXml(image)
+        return self.clean_xml(image)
 
     @staticmethod
-    def getMetadata(commons_title: str) -> str:
+    def get_metadata(commons_title: str) -> str:
         """Get image metadata.
 
         :param commons_title: Wikimedia Commons image title
@@ -77,7 +77,7 @@ class Downloader:
         return request.text
 
     @staticmethod
-    def wikimedia_title_from_file_url(url: str) -> str:
+    def wikimedia_title_from_url(url: str) -> str:
         """Parse Wikimedia Commons image title from URL.
 
         :param url: URL of image
@@ -102,16 +102,16 @@ class Downloader:
             return title[len(prefix) :]
         return title
 
-    def parseFileUrl(self, request_text: str) -> str:
+    def parse_file_url(self, xml_document: str) -> str:
         """Parse image URL from magnus-toolserver metadata.
 
-        :param metadata_xml: Image metadata in XML format
-        :type metadata_xml: str
+        :param xml_document: Image metadata XML document
+        :type xml_document: str
         :return: Image URL
         :rtype: str
         """
         try:
-            root = ET.fromstring(request_text)
+            root = ET.fromstring(xml_document)
         except ElementTreeParseError as error:
             message = "{alpha_2} metadata parse error ({error})".format(
                 alpha_2=self.alpha_2,
@@ -124,7 +124,7 @@ class Downloader:
         return url
 
     @staticmethod
-    def getImage(url: str) -> str:
+    def get_image(url: str) -> str:
         """Retrive image using HTTP GET.
 
         :param url: URL
@@ -136,7 +136,7 @@ class Downloader:
 
         return request.text
 
-    def cleanXml(self, string: str) -> str:
+    def clean_xml(self, string: str) -> str:
         """Optimise and clean SVG image.
 
         :param string: SVG image
@@ -146,7 +146,7 @@ class Downloader:
         :rtype: str
         """
         try:
-            string = Scour().scourString(string)
+            string = Scour().scour_string(string)
         except ExpatError as error:
             message = "{alpha_2} scour {error_message} {url}".format(
                 alpha_2=self.alpha_2,

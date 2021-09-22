@@ -7,7 +7,7 @@ from . import DATABASE_DIR
 from .flagdata import FlagData
 
 
-def loadDatabase(database_name: str) -> dict:
+def load_database(database_name: str) -> dict:
     """Load JSON data into a dictionary."""
     with open(os.path.join(DATABASE_DIR, database_name + ".json"), "r") as file:
         database = json.load(file)
@@ -20,4 +20,4 @@ def loadDatabase(database_name: str) -> dict:
     return data
 
 
-iso3166_1 = loadDatabase("iso3166-1")
+iso3166_1 = load_database("iso3166-1")

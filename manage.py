@@ -59,7 +59,7 @@ def validate_collection():
 
     if validator.validate() is False:
         for error in validator.errors:
-            logging.error(error.getMessage())
+            logging.error(error.get_message())
 
         sys.exit(1)
 

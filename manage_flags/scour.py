@@ -13,10 +13,10 @@ class Scour:
 
     def __init__(self):
         """Initialise with default options."""
-        self.options = self.defaultOptions()
+        self.options = self.default_options()
 
     @staticmethod
-    def defaultOptions():
+    def default_options():
         """Create default options."""
         options = generateDefaultOptions()
 
@@ -31,6 +31,6 @@ class Scour:
 
         return options
 
-    def scourString(self, string: str) -> str:
+    def scour_string(self, string: str) -> str:
         """Scour an XML string."""
         return scourString(string, self.options)

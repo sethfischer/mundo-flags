@@ -20,7 +20,7 @@ class Validator:
 
     def validate(self) -> bool:
         """Validate a flag collection."""
-        collection = self.svg_collection()
+        collection = self.flag_collection()
         iso_countries = self.iso_countries()
 
         self.additional_flags = set(iso_countries) - set(collection)
@@ -54,18 +54,18 @@ class Validator:
         return False
 
     @staticmethod
-    def filename_to_alpha_2(path: str) -> str:
+    def pathname_to_alpha_2(path: str) -> str:
         """Parse ISO alpha-2 country code from flag pathname."""
         base = basename(path)
         root = splitext(base)[0]
         return root.upper()
 
-    def svg_collection(self) -> list:
+    def flag_collection(self) -> list:
         """Get list of flags in collection."""
         collection = []
         for f in listdir(self.flag_directory):
             if isfile(join(self.flag_directory, f)):
-                collection.append(self.filename_to_alpha_2(f))
+                collection.append(self.pathname_to_alpha_2(f))
 
         return collection
 

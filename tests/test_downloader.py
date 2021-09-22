@@ -5,9 +5,9 @@ from manage_flags.flagdata import FlagData
 
 
 class DownloaderTestCase(unittest.TestCase):
-    def test_wikimedia_title_from_file_url(self):
+    def test_wikimedia_title_from_url(self):
         url = "https://test.example.com/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
-        title = Downloader.wikimedia_title_from_file_url(url)
+        title = Downloader.wikimedia_title_from_url(url)
 
         self.assertEqual("Flag_of_New_Zealand.svg", title)
 

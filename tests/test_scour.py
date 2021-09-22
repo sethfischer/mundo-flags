@@ -19,6 +19,6 @@ class ScourTestCase(unittest.TestCase):
 </svg>
 """
 
-        result = Scour().scourString(svg)
+        result = Scour().scour_string(svg)
 
         self.assertEqual(result, expected)

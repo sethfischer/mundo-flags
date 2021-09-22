@@ -10,6 +10,6 @@ class ValidatorError:
         self.description = description
         self.countries = sorted(countries)
 
-    def getMessage(self) -> str:
+    def get_message(self) -> str:
         """Get error message."""
         return self.description + ": " + ", ".join(self.countries)
