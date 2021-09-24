@@ -30,6 +30,13 @@ class Downloader:
         self.flag_data = flag_data
         self.url = None
 
+        self.headers = {
+            "User-Agent": (
+                f"mundo-flags/{requests.__version__} "
+                "(+https://github.com/sethfischer/mundo-flags)"
+            ),
+        }
+
     def get(self) -> str:
         """Download flag image from Wikimedia Commons.
 
@@ -60,8 +67,7 @@ class Downloader:
 
         return self.clean_xml(image)
 
-    @staticmethod
-    def get_metadata(commons_title: str) -> str:
+    def get_metadata(self, commons_title: str) -> str:
         """Get image metadata.
 
         :param commons_title: Wikimedia Commons image title
@@ -72,7 +78,13 @@ class Downloader:
         metadata_host = "https://magnus-toolserver.toolforge.org"
         metadata_url = f"{metadata_host}/commonsapi.php?image={commons_title}"
 
-        request = requests.get(metadata_url)
+        request = requests.get(metadata_url, self.headers)
+
+        if request.status_code != requests.codes.ok:
+            message = "{alpha_2} download HTTP error {status_code}".format(
+                alpha_2=self.alpha_2, status_code=request.status_code
+            )
+            raise RuntimeError(message)
 
         return request.text
 
@@ -123,8 +135,7 @@ class Downloader:
 
         return url
 
-    @staticmethod
-    def get_image(url: str) -> str:
+    def get_image(self, url: str) -> str:
         """Retrive image using HTTP GET.
 
         :param url: URL
@@ -132,7 +143,13 @@ class Downloader:
         :return: SVG image
         :rtype: str
         """
-        request = requests.get(url)
+        request = requests.get(url, headers=self.headers)
+
+        if request.status_code != requests.codes.ok:
+            message = "{alpha_2} download HTTP error {status_code}".format(
+                alpha_2=self.alpha_2, status_code=request.status_code
+            )
+            raise RuntimeError(message)
 
         return request.text
 
