@@ -17,12 +17,19 @@ FLAG_DIRECTORY = os.path.join("flags", "iso3166-1")
 logging.basicConfig(format="%(levelname)s:%(message)s")
 
 
-def flagPathname(alpha_2: str, svg: str) -> str:
+def flagPathname(alpha_2: str, scour: bool = True) -> str:
     """Generate pathname for flag image."""
-    return os.path.join(FLAG_DIRECTORY, alpha_2.lower() + ".svg")
+    if scour:
+        filename = alpha_2.lower() + ".svg"
+    else:
+        filename = alpha_2.lower() + "_no-scour.svg"
+
+    return os.path.join(FLAG_DIRECTORY, filename)
 
 
-def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
+def downlad_iso_3166_1_flag(
+    alpha_2: str, exit_on_error: bool = True, scour: bool = True
+) -> bool:
     """Download a flag image from Wikimedia Commons."""
     if alpha_2 not in iso3166_1:
         logging.critical("Invalid alpha-2 code: {alpha_2}".format(alpha_2=alpha_2))
@@ -31,9 +38,9 @@ def downlad_iso_3166_1_flag(alpha_2: str, exit_on_error: bool = True) -> bool:
     downloader = Downloader(iso3166_1[alpha_2])
 
     try:
-        svg = downloader.get()
+        svg = downloader.get(scour)
 
-        pathname = flagPathname(alpha_2, svg)
+        pathname = flagPathname(alpha_2, scour)
         file = open(pathname, "w")
         file.write(svg)
         file.close
@@ -70,7 +77,7 @@ def main(args):
     """Manage flags CLI tool."""
     if args.cmd == "download":
         if args.alpha_2 is not None:
-            downlad_iso_3166_1_flag(args.alpha_2)
+            downlad_iso_3166_1_flag(args.alpha_2, scour=args.scour)
         if args.all_countries:
             downlad_iso_3166_1_flags(1)
 
@@ -102,6 +109,13 @@ if __name__ == "__main__":
         dest="all_countries",
         help="Download all flags for all ISO 31661-1 countries",
     )
+    parser_download.add_argument(
+        "--no-scour",
+        action="store_false",
+        dest="scour",
+        help="Do not process image with scour.",
+    )
+    parser_download.set_defaults(scour=True)
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)

@@ -24,6 +24,19 @@
                 "NZ"
             ],
             "console": "integratedTerminal"
+        },
+        {
+            "name": "manage.py download --country NZ --no-scour",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "download",
+                "--country",
+                "NZ",
+                "--no-scour"
+            ],
+            "console": "integratedTerminal"
         }
     ]
 }

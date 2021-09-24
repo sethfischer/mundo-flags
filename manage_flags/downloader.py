@@ -37,7 +37,7 @@ class Downloader:
             ),
         }
 
-    def get(self) -> str:
+    def get(self, scour: bool = True) -> str:
         """Download flag image from Wikimedia Commons.
 
         :return: SVG image
@@ -65,7 +65,10 @@ class Downloader:
 
             image = self.get_image(self.url)
 
-        return self.clean_xml(image)
+        if scour:
+            image = self.clean_xml(image)
+
+        return image
 
     def get_metadata(self, commons_title: str) -> str:
         """Get image metadata.
@@ -140,8 +143,6 @@ class Downloader:
 
         :param url: URL
         :type url: str
-        :return: SVG image
-        :rtype: str
         """
         request = requests.get(url, headers=self.headers)
 

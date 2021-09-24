@@ -1,5 +1,6 @@
 __pycache__
 _build/
 .venv/
+*_no-scour.svg
 *.tar.gz
 *.zip
