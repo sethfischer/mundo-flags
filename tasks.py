@@ -6,6 +6,7 @@ import tempfile
 from os import getcwd
 
 from invoke import run, task
+from jinja2 import BaseLoader, Environment
 
 BUILD_ROOT_DIRECTORY = "_build"
 FLAG_ROOT_DIRECTORY = "flags"
@@ -16,9 +17,9 @@ release_directory = os.path.join(FLAG_ROOT_DIRECTORY, "release")
 cwd = getcwd()
 
 release_readme_template = """\
-mundo-flags {version}
+mundo-flags {{ version }}
 
-{homepage}
+{{ homepage }}
 
 Flag images are dedicated to the public domain (CC0 1.0) by their respective
 authors.
@@ -33,6 +34,11 @@ def build(c, tag="0.0.0"):
     release_name = f"mundo-flags_{tag}"
     release_directory = os.path.join(BUILD_ROOT_DIRECTORY, release_name)
     changelog_filepath = os.path.join(release_directory, "CHANGELOG.md")
+
+    readme_filepath = os.path.join(release_directory, "README.txt")
+    template = Environment(loader=BaseLoader()).from_string(release_readme_template)
+    readme_content = template.render(version=tag, homepage=GIT_REMOTE_HTTPS)
+
     with tempfile.TemporaryDirectory() as tmp_directory:
         run(f"git clone {GIT_REMOTE} {tmp_directory}")
         with c.cd(tmp_directory):
@@ -43,15 +49,7 @@ def build(c, tag="0.0.0"):
             c.run("poetry install")
             c.run(f"mkdir -p {BUILD_ROOT_DIRECTORY}")
             c.run(f"cp -r flags {release_directory}")
-            c.run(
-                'echo "{content}" > {file_path}'.format(
-                    content=release_readme_template.format(
-                        version=tag,
-                        homepage=GIT_REMOTE_HTTPS,
-                    ),
-                    file_path=os.path.join(release_directory, "README.txt"),
-                )
-            )
+            c.run(f'echo "{readme_content}" > {readme_filepath}')
             c.run(f"poetry run cz changelog --file-name {changelog_filepath}")
             c.run(
                 (
