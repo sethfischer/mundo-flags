@@ -55,11 +55,8 @@ class Downloader:
 
             if self.strip_title_prefix(requested_title) != retrived_title:
                 message = (
-                    "{alpha_2} file titles differ {requested} -> {retrived}".format(
-                        alpha_2=self.alpha_2,
-                        requested=requested_title,
-                        retrived=retrived_title,
-                    )
+                    f"{self.alpha_2} file titles differ "
+                    f"{requested_title} -> {retrived_title}"
                 )
                 logging.warning(message)
 
@@ -84,9 +81,7 @@ class Downloader:
         request = requests.get(metadata_url, self.headers)
 
         if request.status_code != requests.codes.ok:
-            message = "{alpha_2} download HTTP error {status_code}".format(
-                alpha_2=self.alpha_2, status_code=request.status_code
-            )
+            message = f"{self.alpha_2} download HTTP error {request.status_code}"
             raise RuntimeError(message)
 
         return request.text
@@ -128,10 +123,7 @@ class Downloader:
         try:
             root = ET.fromstring(xml_document)
         except ElementTreeParseError as error:
-            message = "{alpha_2} metadata parse error ({error})".format(
-                alpha_2=self.alpha_2,
-                error=error,
-            )
+            message = f"{self.alpha_2} metadata parse error ({error})"
             raise RuntimeError(message)
 
         url = root.find(".//file/urls/file[1]").text
@@ -147,9 +139,7 @@ class Downloader:
         request = requests.get(url, headers=self.headers)
 
         if request.status_code != requests.codes.ok:
-            message = "{alpha_2} download HTTP error {status_code}".format(
-                alpha_2=self.alpha_2, status_code=request.status_code
-            )
+            message = f"{self.alpha_2} download HTTP error {request.status_code}"
             raise RuntimeError(message)
 
         return request.text
@@ -166,17 +156,12 @@ class Downloader:
         try:
             string = Scour().scour_string(string)
         except ExpatError as error:
-            message = "{alpha_2} scour {error_message} {url}".format(
-                alpha_2=self.alpha_2,
-                error_message=expat_errors.messages[error.code],
-                url=self.url,
+            message = (
+                f"{self.alpha_2} scour {expat_errors.messages[error.code]} {self.url}"
             )
             raise RuntimeError(message)
         except DecimalInvalidOperation:
-            message = "{alpha_2} scour invalid decimal operation {url}".format(
-                alpha_2=self.alpha_2,
-                url=self.url,
-            )
+            message = f"{self.alpha_2} scour invalid decimal operation {self.url}"
             raise RuntimeError(message)
 
         return string

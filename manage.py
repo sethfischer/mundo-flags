@@ -32,7 +32,7 @@ def downlad_iso_3166_1_flag(
 ) -> bool:
     """Download a flag image from Wikimedia Commons."""
     if alpha_2 not in iso3166_1:
-        logging.critical("Invalid alpha-2 code: {alpha_2}".format(alpha_2=alpha_2))
+        logging.critical(f"Invalid alpha-2 code: {alpha_2}")
         sys.exit(1)
 
     downloader = Downloader(iso3166_1[alpha_2])
