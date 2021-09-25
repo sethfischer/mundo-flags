@@ -1,4 +1,3 @@
-#! /usr/bin/env python
 """Invoke tasks for mundo-flags flag collection."""
 
 import os.path
