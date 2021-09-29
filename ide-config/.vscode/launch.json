@@ -37,6 +37,13 @@
                 "--no-scour"
             ],
             "console": "integratedTerminal"
+        },
+        {
+            "name": "lint-svg.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/lint-svg.py",
+            "console": "integratedTerminal"
         }
     ]
 }

@@ -11,8 +11,12 @@ install-ide-config:
 .PHONY: lint
 lint: lint-python lint-shell lint-svg
 
-.PHONY: lint-python lint-shell lint-svg
-lint-python lint-shell lint-svg:
+.PHONY: lint-svg
+lint-svg:
+	./lint-svg.py
+
+.PHONY: lint-python lint-shell
+lint-python lint-shell:
 	./$@.sh
 
 .PHONY: convert
