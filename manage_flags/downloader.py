@@ -154,7 +154,7 @@ class Downloader:
         :rtype: str
         """
         try:
-            string = Scour().scour_string(string)
+            string = Scour().scour_string_multipass(string)
         except ExpatError as error:
             message = (
                 f"{self.alpha_2} scour {expat_errors.messages[error.code]} {self.url}"

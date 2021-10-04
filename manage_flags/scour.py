@@ -32,5 +32,30 @@ class Scour:
         return options
 
     def scour_string(self, string: str) -> str:
-        """Scour an XML string."""
+        """Scour an XML string.
+
+        :param string: SVG image
+        :type string: str
+        :return: SVG image
+        :rtype: str
+        """
         return scourString(string, self.options)
+
+    def scour_string_multipass(self, string: str, iterations: int = 3) -> str:
+        """Scour an XML string with multiple iterations.
+
+        Scouring an already scoured SVG can sometimes `produce a smaller SVG`_.
+
+        .. _`produce a smaller SVG`: https://github.com/scour-project/scour/issues/124
+
+        :param string: SVG image
+        :type string: str
+        :param: iterations: Number of iterations
+        :type iterations: int
+        :return: SVG image
+        :rtype: str
+        """
+        for _ in range(iterations):
+            string = self.scour_string(string)
+
+        return string
