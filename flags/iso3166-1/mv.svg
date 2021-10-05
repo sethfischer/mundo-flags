@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg id="Flag of Maldives" width="720" height="480" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <rect id="red background" width="720" height="480" fill="#D21034"/>
+<svg width="720" height="480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="480" fill="#D21034"/>
   <g fill="#007E3A">
-    <rect id="green field" x="120" y="120" width="480" height="240"/>
-    <circle id="white crescent arc" cx="390" cy="240" r="80" fill="#fff"/>
-    <circle id="green crescent arc" cx="420" cy="240" r="80"/>
+    <rect x="120" y="120" width="480" height="240"/>
+    <circle cx="390" cy="240" r="80" fill="#FFF"/>
+    <circle cx="420" cy="240" r="80"/>
   </g>
 </svg>

@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="800" height="480" viewBox="-125 -75 250 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1e3" height="600" fill="#ce1126" viewBox="-50 -30 100 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Flag of Burundi</title>
   <defs>
-    <g id="star">
-      <g id="t">
-        <g id="c">
-          <path id="h" transform="rotate(30 0,-10)" d="m0-10v10h10"/>
-          <use transform="scale(-1,1)" xlink:href="#h"/>
-        </g>
-        <use transform="rotate(120)" xlink:href="#c"/>
-        <use transform="rotate(240)" xlink:href="#c"/>
-      </g>
-      <use transform="rotate(180)" xlink:href="#t"/>
-    </g>
+    <clipPath id="c">
+      <path d="m-50-30H50v60H-50z"/>
+    </clipPath>
   </defs>
-  <path d="m-125-75h250l-250 150h250z" fill="#ce1126"/>
-  <path d="m-125-75v150l250-150v150z" fill="#1eb53a"/>
-  <path d="m-125-75 250 150m0-150-250 150" stroke="#fff" stroke-width="20"/>
-  <circle r="42.5" fill="#fff"/>
-  <use id="green" y="-22" fill="#1eb53a" xlink:href="#star"/>
-  <use transform="rotate(120)" xlink:href="#green"/>
-  <use transform="rotate(240)" xlink:href="#green"/>
-  <use id="red" transform="translate(0,-22) scale(.82)" fill="#ce1126" xlink:href="#star"/>
-  <use transform="rotate(120)" xlink:href="#red"/>
-  <use transform="rotate(240)" xlink:href="#red"/>
+  <path d="m-50-30H50v60H-50z"/>
+  <path d="m-60-36v72L60-36v72z" clip-path="url(#c)" fill="#1eb53a" stroke="#fff" stroke-width="8"/>
+  <circle r="17" fill="#fff"/>
+  <path id="s" d="m1.05-10.62h2.1L2.1-8.8l1.05 1.82h-2.1L0-5.16-1.05-6.98h-2.1L-2.1-8.8l-1.05-1.82h2.1L0-12.44z" stroke="#1eb53a" stroke-width=".36"/>
+  <use x="-7.62" y="13.2" xlink:href="#s"/>
+  <use x="7.62" y="13.2" xlink:href="#s"/>
 </svg>

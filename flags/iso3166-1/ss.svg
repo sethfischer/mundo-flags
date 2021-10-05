@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="1e3" height="500" version="1.1" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
-  <title>Flag of South Sudan</title>
-  <rect y="7" width="20" height="3" fill="#078930"/>
-  <rect y="3" width="20" height="4" fill="#FFF"/>
-  <rect width="20" height="3"/>
-  <rect y="3.5" width="20" height="3" fill="#DA121A"/>
-  <polygon points="0 0 8.6603 5 0 10" fill="#0F47AF"/>
-  <polygon transform="translate(2.8868 5) scale(3.1148e-6)" points="-513674 0 415571 301930 -158734 -488533 -158734 488533 415571 -301930" fill="#FCDD09"/>
+<svg width="1e3" height="500" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0H20V10H0z" fill="#078930"/>
+  <path d="M0 0H20V7H0z" fill="#fff"/>
+  <path d="M0 0H20V3H0z"/>
+  <path d="m0 3.5h20v3h-20z" fill="#da121a"/>
+  <path d="M0 0L8.660254 5 0 10z" fill="#0f47af"/>
+  <path transform="matrix(0 -8.3333 8.3333 0 1.3538 6.6667) matrix(1.5 0 0 1.5 -17.594 .38223) matrix(0 -.02 .02 0 11.721 -.060338)" d="m10.259 7.0879-12.06-3.9186 7.4536 10.259-1.2e-6 -12.681-7.4536 10.259z" fill="#fcdd09"/>
 </svg>

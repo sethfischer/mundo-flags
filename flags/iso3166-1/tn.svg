@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="800" version="1.0" viewBox="-60 -40 120 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g fill="#e70013">
-    <rect x="-60" y="-40" width="120" height="80"/>
-    <circle r="20" fill="#fff"/>
-    <circle r="15"/>
-    <circle cx="4" r="12" fill="#fff"/>
-    <g id="star" transform="translate(4)">
-      <g id="c">
-        <path id="t" transform="rotate(18 -9,0)" d="m-9 0h9v-4.5"/>
-        <use transform="scale(1,-1)" xlink:href="#t"/>
-      </g>
-      <use transform="rotate(72)" xlink:href="#c"/>
-      <use transform="rotate(144)" xlink:href="#c"/>
-      <use transform="rotate(216)" xlink:href="#c"/>
-      <use transform="rotate(288)" xlink:href="#c"/>
-    </g>
-  </g>
+<svg width="1200" height="800" fill="#e70013" viewBox="-60 -40 120 80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M-60-40H60v80H-60z"/>
+  <circle r="20" fill="#fff"/>
+  <circle r="15"/>
+  <circle cx="4" r="12" fill="#fff"/>
+  <path d="M-5 0l16.281-5.29L1.22 8.56V-8.56L11.28 5.29z"/>
 </svg>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1500" height="1e3" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
-  <rect id="Yellow" width="15" height="10" fill="#fcd116"/>
-  <rect id="Red" y="5" width="15" height="5" fill="#e8112d"/>
-  <rect id="Green" width="6" height="10" fill="#008751"/>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h900v600H0z" fill="#e8112d"/>
+  <path d="M0 0h900v300H0z" fill="#fcd116"/>
+  <path d="M0 0h360v600H0z" fill="#008751"/>
 </svg>

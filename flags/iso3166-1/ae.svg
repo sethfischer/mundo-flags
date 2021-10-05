@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="600" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-  <rect id="green" width="12" height="2" fill="#009E49"/>
-  <rect y="2" width="12" height="2" fill="#fff"/>
+  <rect id="green" width="12" height="6" fill="#00732f"/>
+  <rect y="2" width="12" height="4" fill="#fff"/>
   <rect y="4" width="12" height="2"/>
-  <rect id="red" width="3" height="6" fill="#CE1126"/>
+  <rect id="red" width="3" height="6" fill="#f00"/>
 </svg>

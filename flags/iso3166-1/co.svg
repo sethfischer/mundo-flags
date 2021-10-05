@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
-<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="300" fill="#fcd116"/>
-  <rect y="300" width="900" height="150" fill="#003893"/>
-  <rect y="450" width="900" height="150" fill="#ce1126"/>
+<svg id="svg8" width="900" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path id="path2" d="M0 0h900v600H0z" fill="#fcd116" style="fill:#ffcd00"/>
+  <path id="path4" d="M0 300h900v300H0z" fill="#003893" style="fill:#003087"/>
+  <path id="path6" d="M0 450h900v150H0z" fill="#ce1126" style="fill:#c8102e"/>
 </svg>

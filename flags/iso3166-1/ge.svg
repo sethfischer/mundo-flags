@@ -9,8 +9,8 @@
       <use transform="rotate(90)" xlink:href="#varm"/>
     </g>
   </defs>
-  <rect width="300" height="200" fill="#fff"/>
-  <path d="m130 0v80h-130v40h130v80h40v-80h130v-40h-130v-80h-40z" fill="#f00"/>
+  <rect width="300" height="200" style="fill:#fff"/>
+  <path d="m130 0v80h-130v40h130v80h40v-80h130v-40h-130v-80h-40z" style="fill:#ff0000"/>
   <use transform="translate(64.45,39.45)" fill="#f00" xlink:href="#smallcross"/>
   <use transform="translate(235.55,160.55)" fill="#f00" xlink:href="#smallcross"/>
   <use transform="translate(235.55,39.45)" fill="#f00" xlink:href="#smallcross"/>

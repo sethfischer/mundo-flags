@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="600" fill="#da121a"/>
-  <rect width="1200" height="400" fill="#fcdd09"/>
-  <rect width="1200" height="200" fill="#078930"/>
-  <circle cx="600" cy="300" r="200" fill="#0f47af"/>
-  <path d="m447.83 249.94h116.25l26.284-80.893 7.0097 21.574-38.196 117.55-11.342-8.2405 11.912-36.661h-93.563l-18.352-13.333m58.123 178.89 35.922-110.56-68.812-49.995h22.684l99.998 72.653-11.342 8.2404-31.186-22.658-28.912 88.983-18.352 13.333m188.09 0-94.046-68.328-68.812 49.995 7.0098-21.574 99.998-72.653 4.3323 13.333-31.186 22.658 75.694 54.995 7.0097 21.574m58.123-178.89-94.046 68.328 26.284 80.893-18.352-13.333-38.196-117.55h14.019l11.912 36.661 75.694-54.995h22.684m-152.17-110.56 35.922 110.56h85.056l-18.352 13.333h-123.6l4.3322-13.333h38.548l-28.912-88.983 7.0098-21.574z" fill="#fcdd09"/>
-  <path d="m600 373.33v86.667m-69.744-137.34-82.425 26.781m109.06-108.77-50.941-70.115m137.15 70.115 50.941-70.115m-24.302 152.1 82.425 26.781-82.425-26.781z" stroke="#fcdd09" stroke-width="6.6667"/>
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M0 0H1200V600H0z" fill="#da121a"/>
+  <path d="M0 0H1200V400H0z" fill="#fcdd09"/>
+  <path d="M0 0H1200V200H0z" fill="#078930"/>
+  <g transform="matrix(1.6667 0 0 1.6667 600 300)">
+    <circle r="120" fill="#0f47af"/>
+    <g id="a">
+      <path d="m0-96-4.2058 12.944 17.347 53.39h-23.129l-2.5994 8h74.163l11.011-8h-51.034z" fill="#fcdd09"/>
+      <path transform="rotate(216)" d="m0 44v52" stroke="#fcdd09" stroke-width="4"/>
+    </g>
+    <use transform="rotate(72)" width="100%" height="100%" xlink:href="#a"/>
+    <use transform="rotate(144)" width="100%" height="100%" xlink:href="#a"/>
+    <use transform="rotate(216)" width="100%" height="100%" xlink:href="#a"/>
+    <use transform="rotate(-72)" width="100%" height="100%" xlink:href="#a"/>
+  </g>
 </svg>

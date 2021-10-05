@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg>
 <svg width="800" height="480" viewBox="0 0 30 18" xmlns="http://www.w3.org/2000/svg">
-  <rect id="red" width="30" height="18" fill="#ce1126"/>
-  <polygon id="white" points="0 0 20.825 18 30 18 9.1753 0" fill="#fff"/>
-  <polygon id="black" points="1.5292 0 22.354 18 28.471 18 7.6461 0"/>
+  <rect width="30" height="18" fill="#da1a35"/>
+  <polygon points="0 0 20.825 18 30 18 9.1753 0" fill="#FFF"/>
+  <polygon points="1.5292 0 22.354 18 28.471 18 7.6461 0"/>
 </svg>

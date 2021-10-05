@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="600"/>
-  <rect y="200" width="1200" height="200" fill="#fff"/>
-  <rect y="400" width="1200" height="200" fill="#007a3d"/>
-  <polygon points="600 300 0 600 0 0" fill="#ce1126"/>
-  <polygon points="225.41 310.36 199.84 312.75 203.21 338.29 185.41 319.72 167.61 338.29 170.98 312.75 145.41 310.36 167.41 297.08 153.33 275.54 177.4 284.52 185.41 260.04 193.42 284.52 217.49 275.54 203.41 297.08" fill="#fff"/>
+<svg width="1200" height="600" viewBox="0 0 10080 5040" xmlns="http://www.w3.org/2000/svg">
+  <title>Flag of Jordan</title>
+  <path d="m0 0h10080v5040H0z" fill="#fff"/>
+  <path d="m0 0h10080v1680H0z"/>
+  <path d="m0 3360h10080v1680H0z" fill="#007a3d"/>
+  <path d="m5040 2520L0 5040V0m1557 2160-78 198-203-62 106 184-176 120 211 32-16 212 156-144 157 144-16-212 210-32-175-120 106-184-203 62z" fill="#ce1126"/>
 </svg>

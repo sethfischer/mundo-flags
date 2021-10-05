@@ -1,34 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="960" height="480" version="1.0" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Flag of New Zealand</title>
-  <rect width="240" height="120" fill="#00247d"/>
-  <svg width="120" height="60" viewBox="0 0 12 6">
-    <clipPath id="t">
-      <path d="m6 3h6v3zv3h-6zh-6v-3zv-3h6z"/>
+<svg width="1200" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="Canton">
+      <path d="m0 0h600v300h-600z"/>
     </clipPath>
-    <g stroke="#cf142b" stroke-width="1.2">
-      <path d="m0 0 12 6m0-6-12 6" stroke="#fff"/>
-      <path d="m0 0 12 6m0-6-12 6" clip-path="url(#t)" stroke-width=".8"/>
-      <path d="m6 0v6m-6-3h12" stroke="#fff" stroke-width="2"/>
-      <path d="m6 0v6m-6-3h12"/>
+    <clipPath id="Diagonals">
+      <path d="m0 0 300 150h-300zm300 0h300l-300 150zm0 150h300v150zm0 0v150h-300z"/>
+    </clipPath>
+    <g id="Pentagram">
+      <g id="Arm" transform="translate(0 -.32492)">
+        <path d="m0 0v0.5l1-0.5z"/>
+        <path transform="rotate(-36,1,0)" d="m0 0v-0.5l1 0.5z"/>
+      </g>
+      <use transform="scale(-1,1)" xlink:href="#Arm"/>
+      <use transform="rotate(72)" xlink:href="#Arm"/>
+      <use transform="rotate(-72)" xlink:href="#Arm"/>
+      <use transform="rotate(-72) scale(-1 1)" xlink:href="#Arm"/>
     </g>
-  </svg>
-  <polygon id="star" transform="scale(1.0235e-6)" points="0 -513674 301930 415571 -488533 -158734 488533 -158734 -301930 415571"/>
-  <g transform="translate(180,24)">
-    <use transform="scale(18.472)" fill="#fff" xlink:href="#star"/>
-    <use transform="scale(12)" fill="#cc142b" xlink:href="#star"/>
+  </defs>
+  <rect width="1200" height="600" fill="#012169"/>
+  <g id="Flag_of_the_United_Kingdom">
+    <path id="Saint_Andrews_Cross" d="m0 0 600 300m-600 0 600-300" clip-path="url(#Canton)" stroke="#FFF" stroke-width="60"/>
+    <path id="Saint_Patricks_Cross" d="m0 0 600 300m-600 0 600-300" clip-path="url(#Diagonals)" stroke="#C8102E" stroke-width="40"/>
+    <g id="Saint_Georges_Cross">
+      <path d="m300 0v300m-300-150h600" clip-path="url(#Canton)" stroke="#FFF" stroke-width="100"/>
+      <path d="m300 0v300m-300-150h600" clip-path="url(#Canton)" stroke="#C8102E" stroke-width="60"/>
+    </g>
   </g>
-  <g transform="translate(180,96)">
-    <use transform="scale(20.472)" fill="#fff" xlink:href="#star"/>
-    <use transform="scale(14)" fill="#cc142b" xlink:href="#star"/>
-  </g>
-  <g transform="rotate(-8,180,48) translate(204,48) rotate(8)">
-    <use transform="scale(16.472)" fill="#fff" xlink:href="#star"/>
-    <use transform="scale(10)" fill="#cc142b" xlink:href="#star"/>
-  </g>
-  <g transform="rotate(-8,180,48) translate(152,48) rotate(8)">
-    <use transform="scale(18.472)" fill="#fff" xlink:href="#star"/>
-    <use transform="scale(12)" fill="#cc142b" xlink:href="#star"/>
+  <g id="Southern_Cross">
+    <g id="Gamma_Crucis">
+      <use transform="translate(900,120) scale(45.4)" fill="#FFF" xlink:href="#Pentagram"/>
+      <use transform="translate(900,120) scale(30)" fill="#C8102E" xlink:href="#Pentagram"/>
+    </g>
+    <g transform="rotate(82,900,240)">
+      <g id="Delta_Crucis">
+        <use transform="translate(900,120) rotate(-82) scale(40.4)" fill="#FFF" xlink:href="#Pentagram"/>
+        <use transform="translate(900,120) rotate(-82) scale(25)" fill="#C8102E" xlink:href="#Pentagram"/>
+      </g>
+      <g id="Beta_Crucis">
+        <use transform="translate(900,380) rotate(-82) scale(45.4)" fill="#FFF" xlink:href="#Pentagram"/>
+        <use transform="translate(900,380) rotate(-82) scale(30)" fill="#C8102E" xlink:href="#Pentagram"/>
+      </g>
+    </g>
+    <g id="Alpha_Crucis">
+      <use transform="translate(900,480) scale(50.4)" fill="#FFF" xlink:href="#Pentagram"/>
+      <use transform="translate(900,480) scale(35)" fill="#C8102E" xlink:href="#Pentagram"/>
+    </g>
   </g>
 </svg>

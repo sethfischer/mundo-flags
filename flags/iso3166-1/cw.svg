@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg id="Flag_of_Curacao" width="13500" height="9e3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <polygon id="pentagram" points="0 -1 0.22451 -0.30902 0.95106 -0.30902 0.36327 0.11803 0.58779 0.80902 0 0.38197 -0.58779 0.80902 -0.36327 0.11803 -0.95106 -0.30902 -0.22451 -0.30902"/>
-  </defs>
-  <rect width="13500" height="9e3" fill="#002b7f"/>
-  <rect y="5625" width="13500" height="1125" fill="#f9e814"/>
-  <use id="small_star" transform="scale(750)" x="2" y="2" fill="white" xlink:href="#pentagram"/>
-  <use id="large_star" transform="scale(1e3)" x="3" y="3" fill="white" xlink:href="#pentagram"/>
+<svg width="900" height="600" viewBox="0 0 54 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="54" height="36" fill="#002b7f"/>
+  <path d="M0,22.5H54V27H0z" fill="#f9e814"/>
+  <g id="s" fill="#fff">
+    <g id="f">
+      <g id="t">
+        <path id="o" transform="rotate(18,12,8)" d="m12 8v4h2z"/>
+        <use transform="scale(-1,1)" x="-24" xlink:href="#o"/>
+      </g>
+      <use transform="rotate(72,12,12)" xlink:href="#t"/>
+    </g>
+    <use transform="rotate(-72,12,12)" xlink:href="#t"/>
+    <use transform="rotate(144,12,12)" xlink:href="#f"/>
+  </g>
+  <use transform="scale(.75)" x="-4" y="-4" xlink:href="#s"/>
 </svg>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="756" height="297" version="1.1" viewBox="0 0 504 198" xmlns="http://www.w3.org/2000/svg">
-  <desc>Flag of Qatar</desc>
-  <rect width="504" height="198" fill="#70193d"/>
-  <path d="m0 0h144l36 11-36 11 36 11-36 11 36 11-36 11 36 11-36 11 36 11-36 11 36 11-36 11 36 11-36 11 36 11-36 11 36 11-36 11h-144z" fill="#fff"/>
+<svg width="1400" height="550" preserveAspectRatio="none" viewBox="0 0 75 18" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,0H75V18H0" fill="#8a1538"/>
+  <path d="M22,18H0V0H22l6,1-6,1 6,1-6,1 6,1-6,1 6,1-6,1 6,1-6,1 6,1-6,1 6,1-6,1 6,1-6,1 6,1z" fill="#fff"/>
 </svg>

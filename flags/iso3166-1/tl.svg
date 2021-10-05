@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="1200" height="600" version="1.1" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-  <title>Flag of East Timor</title>
-  <rect width="12" height="6" fill="#dc241f"/>
-  <polygon points="0 0 0 6 6 3" fill="#ffc726"/>
-  <polygon points="0 0 0 6 4 3"/>
-  <path transform="translate(1.5,3)" d="m-0.4696-0.9391 1.4015 1.4229-1.9702-0.3274 1.7864-0.8932-0.9202 1.7726z" fill="#fff"/>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <path d="m1200 600v-600h-1200v600z" fill="#dc241f"/>
+  <path d="m0 0v600l600-300z" fill="#ffc726"/>
+  <path d="m0 0v600l400-300z"/>
+  <g transform="matrix(34.268 -15.23 15.23 34.268 203.69 -275.38)">
+    <path d="m-7.946 10.602-1.5674 4.824 4.1035-2.9814-5.0723 1e-6 4.1035 2.9814-1.5674-4.824" fill="#fff"/>
+  </g>
 </svg>

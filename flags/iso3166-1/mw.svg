@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
 <svg width="900" height="600" viewBox="-225 -114 450 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Flag of Malawi</title>
-  <rect x="-225" y="-114" width="450" height="300"/>
-  <g fill="#CE1126">
-    <circle r="64.5"/>
-    <rect x="-225" y="-14" width="450" height="100"/>
-    <g id="r16">
-      <g id="r8">
-        <g id="r4">
-          <g id="r2">
-            <path id="r" d="m0-102c-2.2 0-3 3.3-3 6.5 0 8 1 12 3 23.5 2.04-11.5 3-15.6 3-23.5 0-3.3-1-6.5-3-6.5"/>
-            <use transform="rotate(5)" xlink:href="#r"/>
-          </g>
-          <use transform="rotate(10)" xlink:href="#r2"/>
+  <path d="m-225-114h450v300h-450z"/>
+  <circle r="64.5" fill="#ce1126"/>
+  <g id="a">
+    <g id="b">
+      <g id="c">
+        <g id="d">
+          <path id="e" transform="translate(0 -102)" d="m0 0c-2.1667 0-3 3.25-3 6.5 0 7.8333 0.95963 11.929 3 23.5 2.0404-11.571 3-15.667 3-23.5 0-3.25-0.83333-6.5-3-6.5z" fill="#ce1126"/>
+          <use transform="matrix(.99619 .087156 -.087156 .99619 0 0)" xlink:href="#e"/>
         </g>
-        <use transform="rotate(20)" xlink:href="#r4"/>
+        <use transform="matrix(.98481 .17365 -.17365 .98481 0 0)" xlink:href="#d"/>
       </g>
-      <use transform="rotate(40)" xlink:href="#r8"/>
+      <use transform="matrix(.93969 .34202 -.34202 .93969 0 0)" xlink:href="#c"/>
     </g>
-    <use transform="rotate(-80)" xlink:href="#r16"/>
+    <use transform="matrix(.76604 .64279 -.64279 .76604 0 0)" xlink:href="#b"/>
   </g>
-  <rect x="-225" y="-21.5" width="450" height="7.5"/>
-  <rect x="-225" y="86" width="450" height="100" fill="#339E35"/>
+  <use transform="matrix(.17365 -.98481 .98481 .17365 0 0)" xlink:href="#a"/>
+  <path d="m-225-21.5h450v207.5h-450z" stroke-width="5.2599"/>
+  <path d="m-225-14h450v200h-450z" fill="#ce1126" stroke-width="1.4142"/>
+  <path d="m-225 86h450v100h-450z" fill="#339e35"/>
 </svg>

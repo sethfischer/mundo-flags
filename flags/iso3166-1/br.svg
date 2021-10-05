@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="720" height="504" version="1.0" viewBox="-2100 -1470 4200 2940" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="720" height="504" version="1.1" viewBox="-2100 -1470 4200 2940" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <path id="D" d="m-31.5 0h33a30 30 0 0 0 30-30v-10a30 30 0 0 0-30-30h-33zm13-13h19a19 19 0 0 0 19-19v-6a19 19 0 0 0-19-19h-19z" fill-rule="evenodd"/>
     <path id="E" transform="translate(-31.5)" d="m0 0h63v-13h-51v-18h40v-12h-40v-14h48v-13h-60z"/>
@@ -30,11 +30,21 @@
       <use transform="rotate(144)" xlink:href="#c"/>
       <use transform="rotate(216)" xlink:href="#c"/>
     </g>
-    <use id="star1" transform="scale(31.5)" xlink:href="#star"/>
-    <use id="star2" transform="scale(26.25)" xlink:href="#star"/>
-    <use id="star3" transform="scale(21)" xlink:href="#star"/>
-    <use id="star4" transform="scale(15)" xlink:href="#star"/>
-    <use id="star5" transform="scale(10.5)" xlink:href="#star"/>
+    <g id="star1">
+      <use transform="scale(31.5)" xlink:href="#star"/>
+    </g>
+    <g id="star2">
+      <use transform="scale(26.25)" xlink:href="#star"/>
+    </g>
+    <g id="star3">
+      <use transform="scale(21)" xlink:href="#star"/>
+    </g>
+    <g id="star4">
+      <use transform="scale(15)" xlink:href="#star"/>
+    </g>
+    <g id="star5">
+      <use transform="scale(10.5)" xlink:href="#star"/>
+    </g>
   </defs>
   <rect x="-50%" y="-50%" width="100%" height="100%" fill="#009b3a"/>
   <path d="m-1743 0 1743 1113 1743-1113-1743-1113z" fill="#fedf00"/>

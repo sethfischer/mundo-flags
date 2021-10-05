@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="600" height="300" version="1.0" xmlns="http://www.w3.org/2000/svg">
-  <rect width="600" height="300" fill="#00abc9"/>
-  <rect y="100" width="600" height="100" fill="#fae042"/>
-  <path d="m0 0v300l250-150z"/>
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h600v300H0z" fill="#00778B"/>
+  <path d="M0 100h600v100H0z" fill="#FFC72C"/>
+  <path d="m0 0v300l259.81-150z"/>
 </svg>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1e3" height="500" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="200" height="100" fill="#002395"/>
-  <path id="star" d="m116.92 94.061 5.584-17.186 5.584 17.186-14.619-10.621 18.07 1e-6 -14.619 10.621z" fill="#fff"/>
-  <path d="m53 0h100v100l-100-100z" fill="#FECB00"/>
-  <path d="m31.531 0h6.9376l2.1152 6.5607-5.584-4.0607-5.584 4.0607 2.1152-6.5607z" fill="#fff"/>
-  <path d="m131.53 100-5.5663-4.0607 6.91-0.001838 2.125-6.5625 2.125 6.5625 6.91 0.001839-5.5663 4.0607h-6.9376z" fill="#fff"/>
-  <use transform="translate(-75,-75)" xlink:href="#star"/>
-  <use transform="translate(-62.5,-62.5)" xlink:href="#star"/>
-  <use transform="translate(-50,-50)" xlink:href="#star"/>
-  <use transform="translate(-37.5,-37.5)" xlink:href="#star"/>
-  <use transform="translate(-25,-25)" xlink:href="#star"/>
-  <use transform="translate(-12.5,-12.5)" xlink:href="#star"/>
+<svg width="800" height="400" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="16" height="8" fill="#002395"/>
+  <path d="m4.24 0h8v8z" fill="#fecb00"/>
+  <g id="g">
+    <path id="s" d="m2.3533 0.52485 0.44672-1.3749 0.44672 1.3749-1.1695-0.84971h1.4456z" fill="#fff"/>
+    <use x="1" y="1" xlink:href="#s"/>
+    <use x="2" y="2" xlink:href="#s"/>
+  </g>
+  <use x="3" y="3" xlink:href="#g"/>
+  <use x="6" y="6" xlink:href="#g"/>
 </svg>

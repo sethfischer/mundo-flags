@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="510" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="510" height="300" fill="#003893"/>
-  <rect y="150" width="510" height="75" fill="#fff"/>
-  <rect y="175" width="510" height="25" fill="#ce1126"/>
-  <g id="s" transform="translate(191.25,112.5)">
-    <g id="c">
-      <path id="t" transform="rotate(18 0,-15)" d="m0-15v15h7.5" fill="#fc0"/>
-      <use transform="scale(-1,1)" xlink:href="#t"/>
+<svg width="1020" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M0 0h1020v600H0z" fill="#003893"/>
+  <path d="M0 300h1020v150H0z" fill="#fff"/>
+  <path d="M0 350h1020v50H0z" fill="#cf2027"/>
+  <g transform="matrix(2 0 0 2 382.5 375)" fill="#f7d116">
+    <g id="d">
+      <g id="c" transform="translate(0 -75)">
+        <g id="b">
+          <path id="a" transform="rotate(18 0 -15)" d="M0-15V0h7.5"/>
+          <use transform="scale(-1 1)" width="100%" height="100%" xlink:href="#a"/>
+        </g>
+        <use transform="rotate(72)" width="100%" height="100%" xlink:href="#b"/>
+        <use transform="rotate(144)" width="100%" height="100%" xlink:href="#b"/>
+        <use transform="rotate(216)" width="100%" height="100%" xlink:href="#b"/>
+        <use transform="rotate(-72)" width="100%" height="100%" xlink:href="#b"/>
+      </g>
+      <use y="150" width="100%" height="100%" xlink:href="#c"/>
     </g>
-    <use transform="rotate(72)" xlink:href="#c"/>
-    <use transform="rotate(144)" xlink:href="#c"/>
-    <use transform="rotate(216)" xlink:href="#c"/>
-    <use transform="rotate(288)" xlink:href="#c"/>
+    <use transform="rotate(72)" width="100%" height="100%" xlink:href="#d"/>
+    <use transform="rotate(144)" width="100%" height="100%" xlink:href="#d"/>
+    <use transform="rotate(216)" width="100%" height="100%" xlink:href="#d"/>
+    <use transform="rotate(-72)" width="100%" height="100%" xlink:href="#d"/>
   </g>
-  <use x="-44.08" y="14.32" xlink:href="#s"/>
-  <use x="44.08" y="14.32" xlink:href="#s"/>
-  <use x="71.33" y="51.82" xlink:href="#s"/>
-  <use x="71.33" y="98.18" xlink:href="#s"/>
-  <use x="44.08" y="135.68" xlink:href="#s"/>
-  <use y="150" xlink:href="#s"/>
-  <use x="-44.08" y="135.68" xlink:href="#s"/>
-  <use x="-71.33" y="98.18" xlink:href="#s"/>
-  <use x="-71.33" y="51.82" xlink:href="#s"/>
 </svg>

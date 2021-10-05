@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
-  <clipPath id="r">
-    <rect width="900" height="600"/>
-  </clipPath>
-  <path id="blue_area" d="m0 0h900l-900 600z" fill="#003580"/>
-  <path id="green_area" d="m0 600h900v-600z" fill="#009543"/>
-  <line id="white_stripes" x2="900" y1="600" clip-path="url(#r)" stroke="#fff" stroke-width="200"/>
-  <line id="red_stripe" x2="900" y1="600" clip-path="url(#r)" stroke="#d21034" stroke-width="150"/>
-  <path id="star" transform="matrix(.83857 0 0 .83857 -303.04 -139.47)" d="m679.3 422.7-52.68-9.0316 9.0316 52.68-41.107-34.162-18.519 50.138-18.519-50.138-41.107 34.162 9.0316-52.68-52.68 9.0316 34.162-41.107-50.138-18.519 50.138-18.519-34.162-41.107 52.68 9.0316-9.0316-52.68 41.107 34.162 18.519-50.138 18.519 50.138 41.107-34.162-9.0316 52.68 52.68-9.0316-34.162 41.107 50.138 18.519-50.138 18.519 34.162 41.107z" fill="#ffce00"/>
-  <path id="blue_gap" transform="matrix(1.0294 0 0 1.0294 -6.2337 -1.4934)" d="m239.19 161.73a58.284 58.284 0 1 1-116.57 0 58.284 58.284 0 1 1 116.57 0z" fill="#003580"/>
-  <path id="yellow_circle" transform="matrix(.94365 0 0 .94365 11.429 8.8095)" d="m231.62 165.52a52.986 52.986 0 1 1-105.97 0 52.986 52.986 0 1 1 105.97 0z" fill="#ffce00"/>
+<svg width="900" height="600" viewBox="0 0 90 60" xmlns="http://www.w3.org/2000/svg">
+  <title>Flag of Namibia</title>
+  <defs>
+    <clipPath id="c">
+      <path d="m0 0h90v60H0z"/>
+    </clipPath>
+  </defs>
+  <path d="m0 60V0h90z" fill="#003580"/>
+  <path d="m90 0v60H0z" fill="#009543"/>
+  <g clip-path="url(#c)" fill="none">
+    <path d="m0 60L90 0" stroke="#fff" stroke-width="20"/>
+    <path d="m0 60L90 0" stroke="#d21034" stroke-width="15"/>
+  </g>
+  <g transform="translate(18 16.342)" fill="#ffce00">
+    <path transform="scale(.01)" d="m0-1000 155 420 345-286-76 442 442-76-286 345L1000 0 580 155l286 345-442-76 76 442-345-286L0 1000-155 580-500 866l76-442-442 76 286-345-420-155 420-155-286-345 442 76-76-442 345 286z"/>
+    <circle r="5.5" stroke="#003580"/>
+  </g>
 </svg>

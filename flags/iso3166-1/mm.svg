@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1800" height="1200" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <polygon id="pt" transform="scale(8.844)" points="-0.16246 0 0 -0.5 0.16246 0" fill="#FFF"/>
-    <g id="star">
-      <use transform="rotate(216)" xlink:href="#pt"/>
-      <use transform="rotate(-72)" xlink:href="#pt"/>
-      <use xlink:href="#pt"/>
-      <use transform="rotate(72)" xlink:href="#pt"/>
-      <use transform="rotate(144)" xlink:href="#pt"/>
-    </g>
-  </defs>
-  <rect width="18" height="6" fill="#FECB00"/>
-  <rect y="6" width="18" height="6" fill="#EA2839"/>
-  <rect y="4" width="18" height="4" fill="#34B233"/>
-  <use x="9" y="6.422" xlink:href="#star"/>
+<svg width="1200" height="800" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="18" height="12" fill="#FECB00"/>
+  <rect y="4" width="18" height="8" fill="#34B233"/>
+  <rect y="8" width="18" height="4" fill="#EA2839"/>
+  <g transform="translate(9,6.422) scale(4.422)">
+    <polygon id="pt" points="-0.32492 0 0 -1 0.32492 0" fill="#FFF"/>
+    <use transform="rotate(216)" xlink:href="#pt"/>
+    <use transform="rotate(-72)" xlink:href="#pt"/>
+    <use transform="rotate(72)" xlink:href="#pt"/>
+    <use transform="rotate(144)" xlink:href="#pt"/>
+  </g>
 </svg>

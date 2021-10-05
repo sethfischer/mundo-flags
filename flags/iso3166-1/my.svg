@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="1e3" height="500" version="1.1" viewBox="0 0 28 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1200" height="600" fill="none" viewBox="0 0 13440 6720" xmlns="http://www.w3.org/2000/svg">
   <title>Flag of Malaysia</title>
-  <rect width="28" height="14" fill="#fff"/>
-  <g id="v" fill="#dc241f">
-    <rect id="t" width="28" height="1"/>
-    <use y="2" xlink:href="#t"/>
-    <use y="4" xlink:href="#t"/>
-    <use y="6" xlink:href="#t"/>
+  <g transform="scale(480)">
+    <path d="m0 0h28v14H0z" fill="#fff"/>
+    <path d="m1 .5h27m0 2H1m0 2h27m0 2H1" stroke="#c00"/>
+    <path d="m0 0h14v8.5H0z" fill="#006"/>
+    <path d="m0 8.5h28m0 2H0m0 2h28" stroke="#c00"/>
   </g>
-  <use y="6" xlink:href="#v"/>
-  <rect width="14" height="8" fill="#0035ad"/>
-  <circle cx="5.75" cy="4" r="3" fill="#ffd100"/>
-  <circle cx="6.4166" cy="4" r="2.6666" fill="#0035ad"/>
-  <g transform="translate(8.75,4)" fill="#ffd100">
-    <g id="s">
-      <path id="h" d="m1 0 1.4373 0.5563-1.5364-0.12242 1.0536 1.1248-1.3311-0.77689 0.46122 1.4706-0.86219-1.2775-0.22252 1.5251-0.3-2.8z"/>
-      <use transform="scale(1,-1)" xlink:href="#h"/>
-    </g>
-    <use transform="scale(-1,1)" xlink:href="#s"/>
-  </g>
+  <path d="m4200 720 107 732 414-613-222 706 639-373-506 540 738-59-690 267 690 267-738-59 506 540-639-373 222 706-414-613-107 732-107-732-414 613 222-706-639 373 506-540-738 59 690-267-690-267 738 59-506-540 639 373-222-706 414 613zm-600 30a1280 1280 0 1 0 0 2340 1440 1440 0 1 1 0-2340z" fill="#fc0"/>
 </svg>

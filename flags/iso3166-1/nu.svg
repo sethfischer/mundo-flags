@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="600" height="300" version="1.1" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="600" height="300" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="t">
+    <path d="M0,0V15H70V30H60zM0,30V40H30V0H60z"/>
+  </clipPath>
   <title>Flag of Niue</title>
-  <rect width="120" height="60" fill="#fcd116"/>
-  <svg width="60" height="30" viewBox="0 0 12 6">
-    <rect width="12" height="6" fill="#002868"/>
-    <clipPath id="t">
-      <path d="m6 3h6v3zv3h-6zh-6v-3zv-3h6z"/>
-    </clipPath>
-    <g stroke="#cf142b" stroke-width="1.2">
-      <path d="m0 0 12 6m0-6-12 6" stroke="#fff"/>
-      <path d="m0 0 12 6m0-6-12 6" clip-path="url(#t)" stroke-width=".8"/>
-      <path d="m6 0v6m-6-3h12" stroke="#fff" stroke-width="2"/>
-      <path d="m6 0v6m-6-3h12"/>
-    </g>
-  </svg>
-  <g transform="translate(30,15)" fill="#fcd116">
+  <rect width="120" height="60" fill="#012169"/>
+  <g stroke="#c8102e" stroke-width="6">
+    <path d="M0,0L60,30M60,0L0,30" stroke="#fff"/>
+    <path d="M0,0L60,30M60,0L0,30" clip-path="url(#t)" stroke-width="4"/>
+    <path d="M30,0V40M0,15H70" stroke="#fff" stroke-width="10"/>
+    <path d="M30,0V40M0,15H70"/>
+  </g>
+  <path d="M60,0h60V60H0V30H60z" fill="#fedd00"/>
+  <g transform="translate(30,15)">
     <g transform="scale(5.1039)">
-      <circle r="1" fill="#002868"/>
-      <polygon id="s" transform="scale(1.9468e-6)" points="0 -513674 301930 415571 -488533 -158734 488533 -158734 -301930 415571"/>
+      <circle r="1" fill="#012169"/>
+      <path id="s" transform="scale(1.9468e-6)" d="m0-513674 301930 929245-790463-574305h977066l-790463 574305" fill="#fedd00"/>
     </g>
     <use transform="translate(-17.5 .29) scale(3)" xlink:href="#s"/>
     <use transform="translate(17.5 .29) scale(3)" xlink:href="#s"/>

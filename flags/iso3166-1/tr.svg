@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="800" fill="#E30A17"/>
-  <circle cx="425" cy="400" r="200" fill="#fff"/>
-  <circle cx="475" cy="400" r="160" fill="#E30A17"/>
-  <polygon points="583.33 400 764.24 458.78 652.43 304.89 652.43 495.11 764.24 341.22" fill="#fff"/>
+<svg width="1200" height="800" viewBox="0 -3e4 9e4 6e4" xmlns="http://www.w3.org/2000/svg">
+  <title>Flag of Turkey</title>
+  <path d="m0-3e4h9e4v6e4h-9e4z" fill="#e30a17"/>
+  <path d="m41750 0 13568-4408-8386 11541V-7133l8386 11541zm925 8021a15000 15000 0 1 1 0-16042 12000 12000 0 1 0 0 16042z" fill="#fff"/>
 </svg>

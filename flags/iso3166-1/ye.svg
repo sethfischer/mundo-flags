@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
-  <desc>flag of Yemen</desc>
-  <rect width="900" height="600" fill="#fff"/>
-  <rect width="900" height="200" fill="#ce1126"/>
-  <rect y="400" width="900" height="200"/>
+  <path d="M0 0h900v600H0z"/>
+  <path d="M0 0h900v400H0z" fill="#fff"/>
+  <path d="M0 0h900v200H0z" fill="#ce1126"/>
 </svg>

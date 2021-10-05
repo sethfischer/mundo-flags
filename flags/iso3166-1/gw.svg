@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="600" version="1.0" viewBox="-2 -3 12 6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect x="-2" y="-3" width="12" height="6" fill="#fcd116"/>
+  <rect x="-2" width="12" height="3" fill="#009e49"/>
   <rect x="-2" y="-3" width="4" height="6" fill="#ce1126"/>
-  <rect x="2" y="-3" width="8" height="3" fill="#fcd116"/>
-  <rect x="2" width="8" height="3" fill="#009e49"/>
   <g id="c">
-    <path id="t" transform="rotate(18 0,-1)" d="m0-1v1h0.5"/>
+    <path id="t" transform="rotate(18 0,-1)" d="m0-1v1h0.5" fill="#000"/>
     <use transform="scale(-1,1)" xlink:href="#t"/>
   </g>
   <use transform="rotate(72)" xlink:href="#c"/>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="900" height="600" version="1.1" viewBox="-36 -24 72 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="900" height="600" viewBox="-36 -24 72 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Flag of South Korea</title>
-  <g fill="#fff">
-    <rect x="-36" y="-24" width="72" height="48"/>
-    <g transform="rotate(-56.31)">
-      <g id="b2">
-        <g id="b">
-          <rect x="-6" y="-26" width="12" height="8" fill="#000"/>
-          <rect x="-7" y="-24" width="14" height="1"/>
-          <rect x="-7" y="-21" width="14" height="1"/>
-        </g>
-        <use y="44" xlink:href="#b"/>
-        <rect x="-.5" y="17" width="1" height="10"/>
-      </g>
-      <circle r="12" fill="#c60c30"/>
-      <path d="m0-12a6 6 0 0 0 0 12 6 6 0 0 1 0 12 12 12 0 0 1 0-24" fill="#003478"/>
+  <path d="m-36-24h72v48h-72z" fill="#fff"/>
+  <g transform="rotate(-56.31)">
+    <g id="b2">
+      <path id="b" d="M-6-26H6v2H-6zm0 3H6v2H-6zm0 3H6v2H-6z"/>
+      <use y="44" xlink:href="#b"/>
     </g>
-    <g transform="rotate(236.31)">
-      <use xlink:href="#b2"/>
-      <rect x="-1" y="21" width="2" height="2" fill="#000"/>
-      <rect x="-.5" y="-24" width="1" height="4"/>
-    </g>
+    <path d="m0 17v10" stroke="#fff"/>
+    <path d="m0-12a12 12 0 0 1 0 24z" fill="#cd2e3a"/>
+    <path d="M0-12A12 12 0 0 0 0 12 6 6 0 0 0 0 0z" fill="#0047a0"/>
+    <circle cy="-6" r="6" fill="#cd2e3a"/>
+  </g>
+  <g transform="rotate(236.31)">
+    <use xlink:href="#b2"/>
+    <path d="m0-23.5v3m0 37.5v3.5m0 3v3" stroke="#fff"/>
   </g>
 </svg>

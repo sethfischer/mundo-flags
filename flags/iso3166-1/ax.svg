@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg id="Flag of Åland" width="1300" height="850" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1300" height="850" fill="#0053a5"/>
-  <g fill="#ffce00">
-    <rect x="400" width="250" height="850"/>
-    <rect y="300" width="1300" height="250"/>
+<svg width="520" height="340" viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="170" fill="#0064AE"/>
+  <g fill="#FFD300">
+    <rect x="80" width="50" height="170"/>
+    <rect y="60" width="260" height="50"/>
   </g>
-  <g fill="#d21034">
-    <rect x="475" width="100" height="850"/>
-    <rect y="375" width="1300" height="100"/>
+  <g fill="#DB0F16">
+    <rect x="95" width="20" height="170"/>
+    <rect y="75" width="260" height="20"/>
   </g>
 </svg>

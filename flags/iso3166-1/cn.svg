@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="1500" height="1e3" version="1.1" viewBox="-5 -5 30 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Flag of the People's Republic of China</title>
-  <rect x="-5" y="-5" width="30" height="20" fill="#de2910"/>
+<svg width="900" height="600" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <polygon id="s" transform="scale(1.9468e-6)" points="0 -513674 301930 415571 -488533 -158734 488533 -158734 -301930 415571" fill="#ffde00"/>
+    <path id="s" d="m0-1 0.58778 1.809-1.5388-1.118h1.9021l-1.5388 1.118z" fill="#FFFF00"/>
   </defs>
-  <use transform="scale(3)" xlink:href="#s"/>
-  <use transform="translate(5 -3) rotate(239.04)" xlink:href="#s"/>
-  <use transform="translate(7 -1) rotate(261.87)" xlink:href="#s"/>
-  <use transform="translate(7 2) rotate(-74.055)" xlink:href="#s"/>
-  <use transform="translate(5 4) rotate(-51.34)" xlink:href="#s"/>
+  <rect width="30" height="20" fill="#EE1C25"/>
+  <use transform="translate(5,5) scale(3)" xlink:href="#s"/>
+  <use transform="translate(10 2) rotate(23.036)" xlink:href="#s"/>
+  <use transform="translate(12 4) rotate(45.87)" xlink:href="#s"/>
+  <use transform="translate(12 7) rotate(69.945)" xlink:href="#s"/>
+  <use transform="translate(10 9) rotate(20.66)" xlink:href="#s"/>
 </svg>

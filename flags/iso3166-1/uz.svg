@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="500" height="250" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect width="500" height="80" fill="#0099b5"/>
-  <rect y="80" width="500" height="90" fill="#ce1126"/>
-  <rect y="85" width="500" height="80" fill="#fff"/>
-  <rect y="170" width="500" height="80" fill="#1eb53a"/>
-  <circle cx="70" cy="40" r="30" fill="#fff"/>
-  <circle cx="80" cy="40" r="30" fill="#0099b5"/>
-  <g id="s" transform="translate(88,64)" fill="#fff">
-    <g id="c">
-      <path id="t" transform="rotate(18 0,-6)" d="m0-6v6h3"/>
-      <use transform="scale(-1,1)" xlink:href="#t"/>
+<svg width="1e3" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M0 0h1000v500H0z" fill="#1eb53a"/>
+  <path d="M0 0h1000v250H0z" fill="#0099b5"/>
+  <path d="M0 160h1000v180H0z" fill="#ce1126"/>
+  <path d="M0 170h1000v160H0z" fill="#fff"/>
+  <circle cx="140" cy="80" r="60" fill="#fff"/>
+  <circle cx="160" cy="80" r="60" fill="#0099b5"/>
+  <g transform="matrix(2 0 0 2 272 128)" fill="#fff">
+    <g id="e">
+      <g id="d">
+        <g id="c">
+          <g id="b">
+            <path id="a" transform="rotate(18 0 -6)" d="m0-6v6h3"/>
+            <use transform="scale(-1 1)" width="100%" height="100%" xlink:href="#a"/>
+          </g>
+          <use transform="rotate(72)" width="100%" height="100%" xlink:href="#b"/>
+        </g>
+        <use transform="rotate(-72)" width="100%" height="100%" xlink:href="#b"/>
+        <use transform="rotate(144)" width="100%" height="100%" xlink:href="#c"/>
+      </g>
+      <use y="-24" width="100%" height="100%" xlink:href="#d"/>
+      <use y="-48" width="100%" height="100%" xlink:href="#d"/>
     </g>
-    <use transform="rotate(72)" xlink:href="#c"/>
-    <use transform="rotate(144)" xlink:href="#c"/>
-    <use transform="rotate(216)" xlink:href="#c"/>
-    <use transform="rotate(288)" xlink:href="#c"/>
+    <use x="24" width="100%" height="100%" xlink:href="#e"/>
+    <use x="48" width="100%" height="100%" xlink:href="#e"/>
+    <use x="-48" width="100%" height="100%" xlink:href="#d"/>
+    <use x="-24" width="100%" height="100%" xlink:href="#d"/>
+    <use x="-24" y="-24" width="100%" height="100%" xlink:href="#d"/>
   </g>
-  <use x="24" xlink:href="#s"/>
-  <use x="48" xlink:href="#s"/>
-  <use x="72" xlink:href="#s"/>
-  <use x="96" xlink:href="#s"/>
-  <use x="24" y="-24" xlink:href="#s"/>
-  <use x="48" y="-24" xlink:href="#s"/>
-  <use x="72" y="-24" xlink:href="#s"/>
-  <use x="96" y="-24" xlink:href="#s"/>
-  <use x="48" y="-48" xlink:href="#s"/>
-  <use x="72" y="-48" xlink:href="#s"/>
-  <use x="96" y="-48" xlink:href="#s"/>
 </svg>

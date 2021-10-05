@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1500" height="1e3" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1500" height="1e3" fill="#D52B1E"/>
-  <rect width="1500" height="500" fill="#fff"/>
-  <rect width="500" height="500" fill="#0039A6"/>
-  <path d="m176.53 351.13 73.473-226.13 73.473 226.13-192.35-139.75h237.76" fill="#FFF"/>
+  <path d="M0 0h1500v1000H0z" fill="#fff"/>
+  <path d="M0 0h500v1000H0z" fill="#0039a6"/>
+  <path d="M1500 1000H0V500h1500" fill="#d72b1f"/>
+  <path d="m368.88 211.37-192.36 139.75 73.473-226.13 73.473 226.13-192.36-139.75" fill="#fff"/>
 </svg>

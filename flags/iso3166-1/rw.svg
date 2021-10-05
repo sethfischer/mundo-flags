@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg width="1080" height="720" version="1.1" viewBox="0 0 1080 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Flag of Rwanda</title>
-  <rect width="1080" height="360" fill="#00a1de"/>
-  <rect y="360" width="1080" height="180" fill="#fad201"/>
-  <rect y="540" width="1080" height="180" fill="#20603d"/>
+<svg width="1080" height="720" viewBox="0 0 1080 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="1080" height="720" fill="#20603D"/>
+  <rect width="1080" height="540" fill="#FAD201"/>
+  <rect width="1080" height="360" fill="#00A1DE"/>
   <g transform="translate(886.5,188.1)">
     <g id="h">
-      <path id="q" d="m116.1 0-80.408 4.6989 76.452 25.35-78.884-16.272 67.286 44.273-71.985-36.135 53.534 60.18-60.18-53.534 36.135 71.985-44.273-67.286 16.272 78.884-25.35-76.452-4.6989 80.408-1-117.1z" fill="#e5be01"/>
+      <path id="q" d="m116.1 0-80.408 4.6989 76.452 25.35-78.884-16.272 67.286 44.273-71.985-36.135 53.534 60.18-60.18-53.534 36.135 71.985-44.273-67.286 16.272 78.884-25.35-76.452-4.6989 80.408-1-117.1z" fill="#E5BE01"/>
       <use transform="scale(1,-1)" xlink:href="#q"/>
     </g>
     <use transform="scale(-1,1)" xlink:href="#h"/>
-    <circle r="34.3" fill="#e5be01" stroke="#00a1de" stroke-width="3.4"/>
+    <circle r="34.3" fill="#E5BE01" stroke="#00A1DE" stroke-width="3.4"/>
   </g>
 </svg>
