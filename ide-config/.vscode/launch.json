@@ -44,6 +44,16 @@
             "request": "launch",
             "program": "${workspaceFolder}/lint-svg.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "lint-svg.py --warn-on-error",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/lint-svg.py",
+            "args": [
+                "--warn-on-error"
+            ],
+            "console": "integratedTerminal"
         }
     ]
 }

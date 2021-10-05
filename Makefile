@@ -13,7 +13,7 @@ lint: lint-python lint-shell lint-svg
 
 .PHONY: lint-svg
 lint-svg:
-	./lint-svg.py
+	./lint-svg.py --warn-on-error
 
 .PHONY: lint-python lint-shell
 lint-python lint-shell:
