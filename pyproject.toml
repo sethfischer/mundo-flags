@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mundo-flags"
-version = "2021.10.16"
+version = "2021.10.17"
 description = "A web scraper to retrieve sovereign flag images from wikimedia.org."
 authors = ["Seth Fischer <seth@fischer.nz>"]
 license = "MIT"
@@ -24,7 +24,7 @@ toml = "^0.10.2"
 bumpver = "^2021.1113"
 
 [tool.bumpver]
-current_version = "2021.10.16"
+current_version = "2021.10.17"
 version_pattern = "YYYY.MM.DD"
 commit_message = "bump: version {old_version} → {new_version}"
 commit = true
@@ -39,7 +39,7 @@ push = false
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "2021.10.16"
+version = "2021.10.17"
 tag_format = "$version"
 changelog_start_rev = "5b767ff1be51ab89e584715e4d48d192897acd87"
 
