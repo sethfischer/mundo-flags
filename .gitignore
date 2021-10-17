@@ -4,3 +4,4 @@ _build/
 *_no-scour.svg
 *.tar.gz
 *.zip
+CHANGELOG.md

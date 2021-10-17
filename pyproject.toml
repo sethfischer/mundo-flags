@@ -41,6 +41,7 @@ push = false
 name = "cz_conventional_commits"
 version = "2021.10.16"
 tag_format = "$version"
+changelog_start_rev = "5b767ff1be51ab89e584715e4d48d192897acd87"
 
 [tool.pydocstyle]
 convention = "pep257"
